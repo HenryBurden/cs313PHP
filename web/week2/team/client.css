@@ -1,0 +1,21 @@
+.div1 {
+    background-color: cornflowerblue;
+    font-size: 12px;
+}
+.div2 {
+    background-color: goldenrod;
+    font-size: 14px;
+}
+.div3 {
+    background-color: lightgreen;
+    font-size: 16px;
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div:hover {
+    font-weight: bold;
+}
