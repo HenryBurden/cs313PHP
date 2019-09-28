@@ -18,7 +18,7 @@
         </h1>
         <ul>
             <li><a href="introduction.php">Introduction</a></li>
-            <li><a href="assignments.php">Assignments</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
         </ul>
     </header>
 
