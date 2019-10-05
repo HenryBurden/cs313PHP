@@ -53,3 +53,34 @@ li a:hover {
 body {
     margin: 0;
 }
+
+/*Images*/
+section {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; 
+	padding-bottom: 80px;
+}
+
+.media {
+    min-width: 0;
+    margin: 0px;
+}
+
+div img {
+    background-image: url("lettterR.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px, 100px;
+    width: 450px;
+    max-width: 100%;
+    max-height: 325px;
+    max-height: 100%;
+    transition: 0.5s all ease;
+}
+
+img:hover {
+    transform: scale(0.97);
+    transition: 0.5s all ease;
+}

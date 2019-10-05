@@ -23,12 +23,24 @@
             <li><a href="browseItems.php">Browse Skyscrapers</a></li>
             <li><a href="checkout.php">Checkout</a></li>
             <li class="cart"><a href="viewCart.php">
-                <i class="fas fa-shopping-cart"></i></a>
+                    <i class="fas fa-shopping-cart"></i></a>
             </li>
         </ul>
     </header>
 
-    BUILDINGS HERE....
-    
+    <section>
+        <div class=”media”>
+            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+
+            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+
+            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+
+            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+
+        </div>
+    </section>
+
 </body>
+
 </html>
