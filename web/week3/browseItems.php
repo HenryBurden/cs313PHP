@@ -30,13 +30,13 @@
 
     <section>
         <div class=”media”>
-            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
 
-            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
 
-            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
 
-            <img title="Seoul Lotte World Tower" src="seouldLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
 
         </div>
     </section>
