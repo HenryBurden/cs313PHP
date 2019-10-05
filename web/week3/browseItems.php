@@ -30,16 +30,23 @@
 
     <section>
         <div class=”media”>
+            <div>
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
             <p> Hello </p>
+            </div>
 
+            <div>
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
             <p> Hello </p>
+            </div>
 
+            <div>
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
             <p> Hello </p>
+            </div><div>
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
             <p> Hello </p>
+            </div>
 
         </div>
     </section>
