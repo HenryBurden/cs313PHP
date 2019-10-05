@@ -1,0 +1,55 @@
+/*Header Styles*/
+header {
+    color: white;
+    background-color: #111;
+}
+
+.head {
+    padding-left: 16px;
+    display: inline;
+}
+
+.firstLetter {
+    display: inline;
+    font-size: 55px;
+}
+
+.otherLetters {
+    margin-left: -5px;
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.cart {
+    position: absolute;
+    right: 5px;
+}
+
+/*Body Styles*/
+body {
+    margin: 0;
+}
