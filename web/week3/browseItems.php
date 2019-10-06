@@ -4,13 +4,13 @@ session_start();
 if (!isset($_SESSION['numItems'])) {
     $_SESSION['numItems'] = 0;
  }
-/*
+
 if (array_key_exists('seoul', $_POST)) {
     $_SESSION['numItems'] += 1;
-    if (isset($_SESSION['towers']){
-        $_SESSION['towers'] += 'seoul'
-    })
-}*/
+    //if (isset($_SESSION['towers']){
+     //   $_SESSION['towers'] += 'seoul'
+    //})
+}
 
 $numItems = $_SESSION['numItems'];
 
