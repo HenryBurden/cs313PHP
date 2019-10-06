@@ -61,7 +61,7 @@ body {
     background-color: #999;
 }
 
-/*Images*/
+/*Items*/
 section {
 	text-align: center;
 	display: flex;
@@ -87,13 +87,14 @@ div img {
     transform: scale(0.97);
     transition: 0.5s all ease;
 }
-/*
-.description:hover {
-    transform: scale(0.97);
-    transition: 0.5s all ease;
+
+button {
+    background-color: #999;
+    border: 2px solid #581;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
-img:hover {
-    transform: scale(0.97);
-    transition: 0.5s all ease;
-}*/
+button:hover {
+    background-color: #581;
+}
