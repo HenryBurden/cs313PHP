@@ -90,7 +90,7 @@ section {
 
 }
 
-.addCartButton, .checkoutButton {
+.addCartButton {
     background-color: #999;
     border: 2px solid #4CAF50;
     cursor: pointer;
@@ -102,7 +102,7 @@ section {
     outline: none;
 }
 
-.addCartButton:hover {
+.addCartButton:hover, .checkoutButton {
     background-color: #4CAF50;
     color: white;
 }
@@ -140,4 +140,16 @@ section {
 .removeCartButton:hover {
     background-color: #f44336;
     color: white;
+}
+
+.checkoutButton {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px 32px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: black;
+    outline: none;
 }
