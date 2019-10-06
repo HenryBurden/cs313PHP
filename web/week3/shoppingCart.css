@@ -83,6 +83,11 @@ div img {
     transition: 0.5s all ease;
 }
 
+.item:hover {
+    transform: scale(0.97);
+    transition: 0.5s all ease;
+}
+/*
 .description:hover {
     transform: scale(0.97);
     transition: 0.5s all ease;
@@ -91,4 +96,4 @@ div img {
 img:hover {
     transform: scale(0.97);
     transition: 0.5s all ease;
-}
+}*/
