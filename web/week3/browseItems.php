@@ -20,13 +20,13 @@ elseif (array_key_exists('lakhta', $_POST)) {
 elseif (array_key_exists('burj', $_POST)) {
     if (!isset($_SESSION['burj'])) {
         $_SESSION['burj'] = 1000000000;
-        $_SESSION['burj'] += 1;
+        $_SESSION['numItems'] += 1;
     }
 }
 elseif (array_key_exists('taipei', $_POST)) {
     if (!isset($_SESSION['taipei'])) {
         $_SESSION['taipei'] = 2000000000;
-        $_SESSION['taipei'] += 1;
+        $_SESSION['numItems'] += 1;
     }
 }
 
