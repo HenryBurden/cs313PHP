@@ -88,6 +88,7 @@ $numItems = $_SESSION['numItems'];
                     }
                 }    
             ?>
+            <a href="checkout.php" class="checkoutButton">Checkout</a>
     </div>
 
 </body>
