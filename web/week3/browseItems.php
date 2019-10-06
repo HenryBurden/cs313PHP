@@ -7,9 +7,9 @@ if (!isset($_SESSION['numItems'])) {
 
 if (array_key_exists('seoul', $_POST)) {
     if (!isset($_SESSION['seoul'])){
-        //$_SESSION['seoul'] = 'seoul';
-       // $_SESSION['numItems'] += 1;
-    })
+        $_SESSION['seoul'] = 'seoul';
+        $_SESSION['numItems'] += 1;
+    }
 }
 
 $numItems = $_SESSION['numItems'];
