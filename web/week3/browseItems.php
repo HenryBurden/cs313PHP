@@ -47,7 +47,9 @@ $numItems = $_SESSION['numItems'];
                 <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
-                    <button class="addCartButton">Add to Cart</button><br>
+                    <form method="post">
+                    <input class="addCartButton" type="submit" name="addCartButton" value ="Add to Cart"><br>
+</form>
                 </div>
             </div>
 
