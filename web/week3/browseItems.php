@@ -41,7 +41,7 @@
             <div class="item">
                 <img title="Lakhta Center" src="lakhtaCenter.jpg" alt="Lakhta Center">
                 <div class="description">
-                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <p> Lahkta Center <br> $425,000,000 </p>
                     <button class="addCartButton">Add to Cart</button><br>
                 </div>
             </div>
