@@ -80,12 +80,11 @@ div img {
     max-width: 100%;
     max-height: 325px;
     max-height: 100%;
-    transition: 0.2s all ease;
 }
 
 .item:hover {
     transform: scale(0.99);
-    transition: 0.5s all ease;
+    transition: 0.2s all ease;
 }
 
 button {
