@@ -39,7 +39,12 @@ $numItems = $_SESSION['numItems'];
         </ul>
     </header>
 
-    CHECKOUT FORM HERE...
-
+    <form method='post' action='confirmation.php'>
+        <br>
+        <h2>Enter Address:</h2><br>
+        <textarea rows='20' cols='100' name='textarea'></textarea>
+        <br>
+        <input type='submit' name='submit' value='Send me away!'>
+    </form>
 </body>
 </html>
