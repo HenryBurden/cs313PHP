@@ -57,11 +57,7 @@ $address = $_POST['address'];
                         echo '<img class="cartItem" title="' . $tower . '" src="' . $key . '.jpg">';
                         echo '<div class="cartItem">' . $tower . '</div>';
                         echo '<div class="cartItem price">' . $_SESSION[$key] . '</div>';
-                        echo '                    
-                            <form method="post" class="cartItem">
-                                <input class="removeCartButton" type="submit" name="' . $key . '" value="Remove"><br>
-                            </form>
-                        ';
+                        echo '<div class="cartItem"></div>';
                         echo '<div class="cartItem"></div>';
                     }
                 }    
