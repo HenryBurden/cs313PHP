@@ -54,6 +54,11 @@ body {
     margin: 0;
 }
 
+.description {
+    padding-bottom: 5px;
+    background-color: #999;
+}
+
 /*Images*/
 section {
 	text-align: center;
