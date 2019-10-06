@@ -49,7 +49,7 @@
             <div class="item">
                 <img title="Burj Khalifa" src="burjKhalifa.jpg" alt="Burj Khalifa">
                 <div class="description">
-                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <p> Burj Khalifa <br> $1,000,000,000 </p>
                     <button class="addCartButton">Add to Cart</button><br>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="item">
                 <img title="Taipei 101" src="taipei101.jpg" alt=Taipei101">
                 <div class="description">
-                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <p> Taipei 101 <br> $2,000,000,000 </p>
                     <button class="addCartButton">Add to Cart</button><br>
                 </div>
             </div>
