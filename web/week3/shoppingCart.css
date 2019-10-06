@@ -124,5 +124,6 @@ section {
 
 .cartItem img {
     max-height: 100px;
+    width: 20%;
 }
 
