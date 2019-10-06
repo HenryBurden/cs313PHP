@@ -35,7 +35,7 @@ $numItems = $_SESSION['numItems'];
             <li class="cart">
                 <a href="viewCart.php">
                     <i class="fas fa-shopping-cart"></i>
-                    <?php echo $counter;?>
+                    <?php echo $numItems;?>
                 </a>
             </li>
         </ul>
