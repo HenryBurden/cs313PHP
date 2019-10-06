@@ -152,4 +152,5 @@ section {
     transition-duration: 0.4s;
     color: black;
     outline: none;
+    text-decoration: none;
 }
