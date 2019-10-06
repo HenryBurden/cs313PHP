@@ -42,8 +42,8 @@ $address = $_POST['address'];
         </ul>
     </header>
 
-    Confirmation INFO HERE....
-    <?php echo $address; ?>
+    <h2> Purchase successful </h2><br>
+    <?php echo "<h2>Your Skyscraper will be delivered via USPS within 3 business days. Address: " . $address; ?>
 
 </body>
 </html>
