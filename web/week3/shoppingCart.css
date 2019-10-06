@@ -165,3 +165,7 @@ section {
     text-align: center;
 	justify-content: center;
 }
+
+h2 {
+    margin-left: 20%;
+}
