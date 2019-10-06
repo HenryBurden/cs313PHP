@@ -42,10 +42,12 @@ $numItems = $_SESSION['numItems'];
     <form method='post' action='confirmation.php'>
         <br>
         <h2>Enter Address:</h2><br>
+        <div class="checkoutForm">
         <textarea rows='20' cols='100' name='address'></textarea>
         <br>
         <button class="removeCartButton">Return to Cart </button>
         <input class="checkoutButton" type='submit' name='submit' value='Confirm Purchase'>
+</div>
     </form>
 </body>
 </html>

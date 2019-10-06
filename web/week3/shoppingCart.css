@@ -160,3 +160,9 @@ section {
     background-color: #4CAF50;
     color: white;
 }
+
+.checkoutForm {
+    text-align: center;
+	display: flex;
+	justify-content: center;
+}
