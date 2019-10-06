@@ -30,9 +30,7 @@ elseif (array_key_exists('taipei', $_POST)) {
     }
 }
 
-
 $numItems = $_SESSION['numItems'];
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

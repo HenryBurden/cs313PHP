@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['numItems'])) {
+    $_SESSION['numItems'] = 0;
+}
+
+$numItems = $_SESSION['numItems'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
