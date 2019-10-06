@@ -1,13 +1,11 @@
 <?php
 session_start();
 
-if( isset( $_SESSION['counter'] ) ) {
-    $_SESSION['counter'] += 1;
- }else {
-    $_SESSION['counter'] = 1;
+if( !isset( $_SESSION['numItems'] ) ) {
+    $_SESSION['numItems'] = 0;
  }
 
-$counter = $_SESSION['counter'];
+$numItems = $_SESSION['numItems'];
 
 ?>
 <!DOCTYPE html>
