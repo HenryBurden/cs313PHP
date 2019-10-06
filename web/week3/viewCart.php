@@ -30,8 +30,11 @@ $numItems = $_SESSION['numItems'];
         <ul>
             <li><a href="browseItems.php">Browse Skyscrapers</a></li>
             <li><a href="checkout.php">Checkout</a></li>
-            <li class="cart"><a href="viewCart.php">
-                <i class="fas fa-shopping-cart"></i></a>
+            <li class="cart">
+                <a href="viewCart.php">
+                    <i class="fas fa-shopping-cart"></i>
+                    <?php echo $numItems;?>
+                </a>
             </li>
         </ul>
     </header>

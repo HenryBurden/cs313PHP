@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['numItems'])) {
+    $_SESSION['numItems'] = 0;
+}
+
+$numItems = $_SESSION['numItems'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +30,11 @@ session_start();
         <ul>
             <li><a href="browseItems.php">Browse Skyscrapers</a></li>
             <li><a href="checkout.php">Checkout</a></li>
-            <li class="cart"><a href="viewCart.php">
-                <i class="fas fa-shopping-cart"></i></a>
+            <li class="cart">
+                <a href="viewCart.php">
+                    <i class="fas fa-shopping-cart"></i>
+                    <?php echo $numItems;?>
+                </a>
             </li>
         </ul>
     </header>
