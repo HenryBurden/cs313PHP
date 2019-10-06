@@ -43,6 +43,24 @@ $address = $_POST['address'];
     </header>
 
     <h2> Purchase successful </h2><br>
+    <div class="cartContainer">
+            <?php 
+                foreach($possibleTowers as $key => $tower) {
+                    if(isset($_SESSION[$key])) {
+                        echo '<div class="cartItem"></div>';
+                        echo '<img class="cartItem" title="' . $tower . '" src="' . $key . '.jpg">';
+                        echo '<div class="cartItem">' . $tower . '</div>';
+                        echo '<div class="cartItem price">' . $_SESSION[$key] . '</div>';
+                        echo '                    
+                            <form method="post" class="cartItem">
+                                <input class="removeCartButton" type="submit" name="' . $key . '" value="Remove"><br>
+                            </form>
+                        ';
+                        echo '<div class="cartItem"></div>';
+                    }
+                }    
+            ?>
+    </div>
     <?php echo "<h2>Your Skyscraper will be delivered via USPS within 3 business days. Address: " . $address; ?>
 
 </body>
