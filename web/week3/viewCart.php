@@ -50,6 +50,7 @@ $numItems = $_SESSION['numItems'];
             <?php 
                 foreach($possibleTowers as $key => $tower) {
                     if(isset($_SESSION[$key])) {
+                        echo '<div class="cartItem"></div>';
                         echo '<img class="cartItem" title="' . $tower . '" src="' . $key . '.jpg">';
                         echo '<div class="cartItem">' . $tower . '</div>';
                         echo '<div class="cartItem price">' . $_SESSION[$key] . '</div>';
@@ -58,6 +59,7 @@ $numItems = $_SESSION['numItems'];
                                 <input class="removeCartButton" type="submit" name="' . $key . '" value="cancel"><br>
                             </form>
                         ';
+                        echo '<div class="cartItem"></div>';
                     }
                 }    
             ?>

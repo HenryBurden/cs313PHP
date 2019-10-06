@@ -110,7 +110,7 @@ section {
 /*Shopping Cart*/
 .cartContainer {
     display: grid;
-    grid-template-columns: 20% 30% 20% 10%;
+    grid-template-columns: 10% 20% 30% 20% 10% 10%;
     grid-gap: 10px;
 }
 
