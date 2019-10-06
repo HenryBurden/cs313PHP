@@ -68,7 +68,7 @@ $numItems = $_SESSION['numItems'];
     <section>
         <div class=”media”>
             <div class="item">
-                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <img title="Seoul Lotte World Tower" src="seoul.jpg" alt="Seoul Lotte World Tower">
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
                     <form method="post">
@@ -78,7 +78,7 @@ $numItems = $_SESSION['numItems'];
             </div>
 
             <div class="item">
-                <img title="Lakhta Center" src="lakhtaCenter.jpg" alt="Lakhta Center">
+                <img title="Lakhta Center" src="lakhta.jpg" alt="Lakhta Center">
                 <div class="description">
                     <p> Lakhta Center <br> $425,000,000 </p>
                     <form method="post">
@@ -88,7 +88,7 @@ $numItems = $_SESSION['numItems'];
             </div>
 
             <div class="item">
-                <img title="Burj Khalifa" src="burjKhalifa.jpg" alt="Burj Khalifa">
+                <img title="Burj Khalifa" src="burj.jpg" alt="Burj Khalifa">
                 <div class="description">
                     <p> Burj Khalifa <br> $1,000,000,000 </p>
                     <form method="post">
@@ -98,7 +98,7 @@ $numItems = $_SESSION['numItems'];
             </div>
 
             <div class="item">
-                <img title="Taipei 101" src="taipei101.jpg" alt="Taipei101">
+                <img title="Taipei 101" src="taipei.jpg" alt="Taipei101">
                 <div class="description">
                     <p> Taipei 101 <br> $2,000,000,000 </p>
                     <form method="post">
