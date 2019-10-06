@@ -7,6 +7,8 @@ if( isset( $_SESSION['counter'] ) ) {
     $_SESSION['counter'] = 1;
  }
 
+$counter = $_SESSION['counter'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,7 @@ if( isset( $_SESSION['counter'] ) ) {
             <li class="cart">
                 <a href="viewCart.php">
                     <i class="fas fa-shopping-cart"></i>
-                    <?php echo $SESSION["counter"];?>
+                    <?php echo $counter;?>
                 </a>
             </li>
         </ul>
