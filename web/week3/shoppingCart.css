@@ -54,12 +54,6 @@ body {
     margin: 0;
 }
 
-.description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /*Images*/
 section {
 	text-align: center;
