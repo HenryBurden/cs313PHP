@@ -50,7 +50,7 @@ $numItems = $_SESSION['numItems'];
             <?php 
                 foreach($possibleTowers as $tower) {
                     if(isset($_SESSION[$tower])) {
-                        echo "<div class='cartItem'>$tower</div>";
+                        echo '<div class="cartItem">' . $tower . '</div>';
                     }
                 }    
             ?>
