@@ -125,7 +125,19 @@ section {
     width: 100px;
 }
 
-.price {
-  
+.removeCartButton {
+    background-color: #999;
+    border: 2px solid #f44336;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px 32px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: black;
+    outline: none;
 }
 
+.removeCartButton:hover {
+    background-color: #f44336;
+    color: white;
+}

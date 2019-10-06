@@ -56,7 +56,7 @@ $numItems = $_SESSION['numItems'];
                         echo '<div class="cartItem price">' . $_SESSION[$key] . '</div>';
                         echo '                    
                             <form method="post" class="cartItem">
-                                <input class="removeCartButton" type="submit" name="' . $key . '" value="cancel"><br>
+                                <input class="removeCartButton" type="submit" name="' . $key . '" value="Remove"><br>
                             </form>
                         ';
                         echo '<div class="cartItem"></div>';
