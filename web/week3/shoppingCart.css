@@ -84,7 +84,9 @@ div img {
 
 .item:hover {
     transform: scale(0.99);
-    transition: 0.2s all ease;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+
 }
 
 button {
