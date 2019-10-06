@@ -102,7 +102,7 @@ section {
     outline: none;
 }
 
-.addCartButton:hover, .checkoutButton {
+.addCartButton:hover {
     background-color: #4CAF50;
     color: white;
 }
@@ -153,4 +153,9 @@ section {
     color: black;
     outline: none;
     text-decoration: none;
+}
+
+.checkoutButton:hover {
+    background-color: #4CAF50;
+    color: white;
 }
