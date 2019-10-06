@@ -54,12 +54,10 @@ body {
     margin: 0;
 }
 
-.addCartButton {
-    display: inline;
-}
-
 .description {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Images*/
