@@ -54,6 +54,10 @@ body {
     margin: 0;
 }
 
+.addCartButton {
+    display: inline;
+}
+
 /*Images*/
 section {
 	text-align: center;
