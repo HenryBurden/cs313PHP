@@ -7,25 +7,25 @@ if (!isset($_SESSION['numItems'])) {
 
 if (array_key_exists('seoul', $_POST)) {
     if (!isset($_SESSION['seoul'])) {
-        $_SESSION['seoul'] = 385000000;
+        $_SESSION['seoul'] = "385,000,000";
         $_SESSION['numItems'] += 1;
     }
 }
 elseif (array_key_exists('lakhta', $_POST)) {
     if (!isset($_SESSION['lakhta'])) {
-        $_SESSION['lakhta'] = 425000000;
+        $_SESSION['lakhta'] = "425,000,000";
         $_SESSION['numItems'] += 1;
     }
 }
 elseif (array_key_exists('burj', $_POST)) {
     if (!isset($_SESSION['burj'])) {
-        $_SESSION['burj'] = 1000000000;
+        $_SESSION['burj'] = "1,000,000,000";
         $_SESSION['numItems'] += 1;
     }
 }
 elseif (array_key_exists('taipei', $_POST)) {
     if (!isset($_SESSION['taipei'])) {
-        $_SESSION['taipei'] = 2000000000;
+        $_SESSION['taipei'] = "2,000,000,000";
         $_SESSION['numItems'] += 1;
     }
 }
