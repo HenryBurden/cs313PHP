@@ -48,7 +48,7 @@ $numItems = $_SESSION['numItems'];
 
     <div class="cartContainer">
             <?php 
-                foreach($possibleTowers as $tower) {
+                foreach($possibleTowers as $key => $tower) {
                     if(isset($_SESSION[$tower])) {
                         echo '<img class="cartItem" title="' . $tower . '" src="' . $tower . '.jpg">';
                         echo '<div class="cartItem">' . $tower . $_SESSION[$tower] . '</div>';
