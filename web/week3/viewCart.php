@@ -4,6 +4,31 @@ if (!isset($_SESSION['numItems'])) {
     $_SESSION['numItems'] = 0;
 }
 
+if (array_key_exists('seoul', $_POST)) {
+    if (isset($_SESSION['seoul'])) {
+        unset($_SESSION['seoul']);
+        $_SESSION['numItems'] -= 1;
+    }
+}
+elseif (array_key_exists('lakhta', $_POST)) {
+    if (isset($_SESSION['lakhta'])) {
+        unset($_SESSION['lakhta']);
+        $_SESSION['numItems'] -= 1;
+    }
+}
+elseif (array_key_exists('burj', $_POST)) {
+    if (isset($_SESSION['burj'])) {
+        unset($_SESSION['burj']);
+        $_SESSION['numItems'] -= 1;
+    }
+}
+elseif (array_key_exists('taipei', $_POST)) {
+    if (isset($_SESSION['taipei'])) {
+        unset($_SESSION['taipei']);
+        $_SESSION['numItems'] -= 1;
+    }
+}
+
 $possibleTowers = array (
     'seoul' => 'Seoul Lotte World Tower',
     'lakhta' => 'Lakhta Center',
