@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +25,11 @@
         <ul>
             <li><a href="browseItems.php">Browse Skyscrapers</a></li>
             <li><a href="checkout.php">Checkout</a></li>
-            <li class="cart"><a href="viewCart.php">
-                    <i class="fas fa-shopping-cart"></i></a>
+            <li class="cart">
+                <a href="viewCart.php">
+                    <i class="fas fa-shopping-cart"></i>
+                    <?php echo $SESSION["numItems"];?>
+                </a>
             </li>
         </ul>
     </header>
