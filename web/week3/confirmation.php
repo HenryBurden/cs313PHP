@@ -11,7 +11,7 @@ $possibleTowers = array (
     'taipei' => 'Taipei101'
 );
 
-$address = $_POST['address'];
+$address = filter_input($_POST['address']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
