@@ -47,7 +47,7 @@
             </div>
 
             <div class="item">
-                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <img title="Burj Khalifa" src="burjKhalifa.jpg" alt="Burj Khalifa">
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
                     <button class="addCartButton">Add to Cart</button><br>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="item">
-                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <img title="Taipei 101" src="taipei101.jpg" alt=Taipei101">
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
                     <button class="addCartButton">Add to Cart</button><br>
