@@ -1,9 +1,7 @@
 <?php
 session_start();
-if (!isset($_SESSION['numItems'])) {
-    $_SESSION['numItems'] = 0;
-}
 
+$_SESSION['numItems'] = 0;
 $numItems = $_SESSION['numItems'];
 
 $possibleTowers = array (
@@ -64,6 +62,7 @@ $address = $_POST['address'];
             ?>
     </div>
     <?php echo "<h2>Your Skyscraper(s) will be delivered via USPS within 3 business days. Address: " . $address; ?>
+    <?php session_destroy();?>
 
 </body>
 </html>
