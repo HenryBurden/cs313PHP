@@ -153,10 +153,10 @@ section {
     color: black;
     outline: none;
     text-decoration: none;
+    grid-column-start: 5;
 }
 
 .checkoutButton:hover {
     background-color: #4CAF50;
     color: white;
-    grid-column-start: 5;
 }
