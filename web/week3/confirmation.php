@@ -6,6 +6,12 @@ if (!isset($_SESSION['numItems'])) {
 
 $numItems = $_SESSION['numItems'];
 
+$possibleTowers = array (
+    'seoul' => 'Seoul Lotte World Tower',
+    'lakhta' => 'Lakhta Center',
+    'burj' => 'Burj Khalifa',
+    'taipei' => 'Taipei101'
+);
 
 $address = $_POST['address'];
 ?>
@@ -61,7 +67,7 @@ $address = $_POST['address'];
                 }    
             ?>
     </div>
-    <?php echo "<h2>Your Skyscraper will be delivered via USPS within 3 business days. Address: " . $address; ?>
+    <?php echo "<h2>Your Skyscraper(s) will be delivered via USPS within 3 business days. Address: " . $address; ?>
 
 </body>
 </html>
