@@ -59,6 +59,8 @@ body {
     padding-top: 10px;
     padding-bottom: 5px;
     background-color: #999;
+    transform: scale(0.97);
+    transition: 0.5s all ease;
 }
 
 /*Images*/
