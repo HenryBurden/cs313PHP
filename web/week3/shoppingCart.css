@@ -98,7 +98,7 @@ button {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     color: black;
-    text-decoration: none;
+    outline: none;
 }
 
 button:hover {
