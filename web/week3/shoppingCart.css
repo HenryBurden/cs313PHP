@@ -158,5 +158,5 @@ section {
 .checkoutButton:hover {
     background-color: #4CAF50;
     color: white;
-    columns: 5/5;
+    grid-column-start: 5;
 }
