@@ -89,14 +89,16 @@ div img {
 
 button {
     background-color: #999;
-    border: 2px solid #581;
+    border: 2px solid #4CAF50;
     cursor: pointer;
     font-size: 16px;
     padding: 16px 32px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    color: black;
 }
 
 button:hover {
-    background-color: #581;
+    background-color: #4CAF50;
+    color: white;
 }
