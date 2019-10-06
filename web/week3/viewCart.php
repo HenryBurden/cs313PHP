@@ -5,10 +5,10 @@ if (!isset($_SESSION['numItems'])) {
 }
 
 $possibleTowers = array (
-    'seoul',
-    'lakhta',
-    'burj',
-    'taipei'
+    'seoul' => 'Seoul Lotte World Tower',
+    'lakhta' => 'Lakhta Center',
+    'burj' => 'Burj Khalifa',
+    'taipei' => 'Taipei101'
 );
 
 $numItems = $_SESSION['numItems'];
