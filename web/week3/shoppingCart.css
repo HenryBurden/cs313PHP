@@ -110,7 +110,7 @@ section {
 /*Shopping Cart*/
 .cartContainer {
     display: grid;
-    grid-template-columns: 40% 40% 20%;
+    grid-template-columns: 20% 40% 20% 20%;
     grid-gap: 10px;
 }
 
@@ -120,6 +120,8 @@ section {
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .cartContainer img {
