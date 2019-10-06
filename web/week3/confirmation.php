@@ -5,6 +5,9 @@ if (!isset($_SESSION['numItems'])) {
 }
 
 $numItems = $_SESSION['numItems'];
+
+
+$address = $_POST['address'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +43,7 @@ $numItems = $_SESSION['numItems'];
     </header>
 
     Confirmation INFO HERE....
+    <?php echo $address; ?>
 
 </body>
 </html>
