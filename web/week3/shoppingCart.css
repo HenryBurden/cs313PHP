@@ -111,12 +111,9 @@ section {
 .cartContainer {
     display: grid;
     grid-template-columns: 10% 20% 30% 20% 10% 10%;
-    grid-gap: 10px;
 }
 
 .cartItem {
-    background-color: #444;
-    color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
