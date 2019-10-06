@@ -55,7 +55,7 @@ body {
     margin: 0;
 }
 
-/*Items*/
+/*browse Items*/
 section {
 	text-align: center;
 	display: flex;
@@ -70,7 +70,7 @@ section {
 }
 
 div img {
-    width: 500px;
+    width: 600px;
     max-width: 100%;
     max-height: 325px;
     max-height: 100%;
@@ -106,3 +106,15 @@ div img {
     background-color: #4CAF50;
     color: white;
 }
+
+/*Shopping Cart*/
+.cartContainer {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-gap: 10px;
+}
+
+.cartItem {
+
+}
+

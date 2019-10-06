@@ -4,6 +4,13 @@ if (!isset($_SESSION['numItems'])) {
     $_SESSION['numItems'] = 0;
 }
 
+$possibleTowers = array (
+    'seoul',
+    'lakhta',
+    'burj',
+    'taipei'
+);
+
 $numItems = $_SESSION['numItems'];
 ?>
 <!DOCTYPE html>
@@ -39,7 +46,16 @@ $numItems = $_SESSION['numItems'];
         </ul>
     </header>
 
-    CART INFO HERE...
+    <div class="cartContainer">
+            <?php 
+                foreach($possibleTowers as $tower) {
+                    if(isset($_SESSION[$tower])) {
+                        echo "<div class='cartItem'>$tower</div>";
+                    }
+                }    
+            ?>
+    </div>
 
 </body>
+
 </html>
