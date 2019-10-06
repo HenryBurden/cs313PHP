@@ -31,22 +31,36 @@
     <section>
         <div class=”media”>
             <div class="item">
-            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
-            <div class="description">
-                <p> Seoul Lotte World Tower <br> $385,000,000 </p>
-                <button class="addCartButton">Add to Cart</button><br>
+                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <div class="description">
+                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <button class="addCartButton">Add to Cart</button><br>
+                </div>
             </div>
-</div>
 
-            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
-            <p> Hello </p>
+            <div class="item">
+                <img title="Lakhta Center" src="lakhtaCenter.jpg" alt="Lakhta Center">
+                <div class="description">
+                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <button class="addCartButton">Add to Cart</button><br>
+                </div>
+            </div>
 
-            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
-            <p> Hello </p>
+            <div class="item">
+                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <div class="description">
+                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <button class="addCartButton">Add to Cart</button><br>
+                </div>
+            </div>
 
-            <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
-            <p> Hello </p>
-
+            <div class="item">
+                <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+                <div class="description">
+                    <p> Seoul Lotte World Tower <br> $385,000,000 </p>
+                    <button class="addCartButton">Add to Cart</button><br>
+                </div>
+            </div>
         </div>
     </section>
 
