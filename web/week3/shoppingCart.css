@@ -84,7 +84,7 @@ div img {
 }
 
 .item:hover {
-    transform: scale(0.98);
+    transform: scale(0.99);
     transition: 0.5s all ease;
 }
 
