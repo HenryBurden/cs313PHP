@@ -31,8 +31,10 @@
     <section>
         <div class=”media”>
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
+            <div class="description">
             <p> Seoul Lotte World Tower <br> $385,000,000 </p>
             <button class="addCartButton">Add to Cart</button>
+</div>
 
             <img title="Seoul Lotte World Tower" src="seoulLotteWorldTower.jpg" alt="Seoul Lotte World Tower">
             <p> Hello </p>

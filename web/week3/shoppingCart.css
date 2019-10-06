@@ -58,6 +58,10 @@ body {
     display: inline;
 }
 
+.description {
+    display: inline;
+}
+
 /*Images*/
 section {
 	text-align: center;
@@ -70,7 +74,6 @@ section {
 .media {
     min-width: 0;
     margin: 0px;
-    display: inline;
 }
 
 div img {
