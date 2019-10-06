@@ -1,6 +1,12 @@
 <?php
 session_start();
-$_SESSION["numItems"] = "1";
+
+if( isset( $_SESSION['counter'] ) ) {
+    $_SESSION['counter'] += 1;
+ }else {
+    $_SESSION['counter'] = 1;
+ }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +35,7 @@ $_SESSION["numItems"] = "1";
             <li class="cart">
                 <a href="viewCart.php">
                     <i class="fas fa-shopping-cart"></i>
-                    <?php echo $SESSION["numItems"];?>
+                    <?php echo $SESSION["counter"];?>
                 </a>
             </li>
         </ul>
