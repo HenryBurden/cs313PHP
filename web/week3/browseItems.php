@@ -28,7 +28,7 @@ session_start();
             <li class="cart">
                 <a href="viewCart.php">
                     <i class="fas fa-shopping-cart"></i>
-                    <?php echo "1+ " . $SESSION["numItems"];?>
+                    <?php echo $SESSION["numItems"];?>
                 </a>
             </li>
         </ul>
