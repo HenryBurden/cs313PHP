@@ -49,12 +49,12 @@ $numItems = $_SESSION['numItems'];
     <div class="cartContainer">
             <?php 
                 foreach($possibleTowers as $key => $tower) {
-                    if(isset($_SESSION[$tower])) {
-                        echo '<img class="cartItem" title="' . $tower . '" src="' . $tower . '.jpg">';
-                        echo '<div class="cartItem">' . $tower . $_SESSION[$tower] . '</div>';
+                    if(isset($_SESSION[$key])) {
+                        echo '<img class="cartItem" title="' . $tower . '" src="' . $key . '.jpg">';
+                        echo '<div class="cartItem">' . $tower . $_SESSION[$key] . '</div>';
                         echo '                    
                             <form method="post" class="cartItem">
-                                <input class="removeCartButton" type="submit" name="' . $tower . '" value="cancel"><br>
+                                <input class="removeCartButton" type="submit" name="' . $key . '" value="cancel"><br>
                             </form>
                         ';
                     }
