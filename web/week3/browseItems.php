@@ -74,8 +74,7 @@ $numItems = $_SESSION['numItems'];
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
                     <form method="post">
-                        <input class="addCartButton" type="submit" name="seoul"
-                            value="Add to Cart"><br>
+                        <input class="addCartButton" type="submit" name="seoul" value="Add to Cart"><br>
                     </form>
                 </div>
             </div>
@@ -94,7 +93,9 @@ $numItems = $_SESSION['numItems'];
                 <img title="Burj Khalifa" src="burjKhalifa.jpg" alt="Burj Khalifa">
                 <div class="description">
                     <p> Burj Khalifa <br> $1,000,000,000 </p>
-                    <input class="addCartButton" type="submit" name="burj" value="Add to Cart"><br>
+                    <form method="post">
+                        <input class="addCartButton" type="submit" name="burj" value="Add to Cart"><br>
+                    </form>
                 </div>
             </div>
 
@@ -102,7 +103,9 @@ $numItems = $_SESSION['numItems'];
                 <img title="Taipei 101" src="taipei101.jpg" alt="Taipei101">
                 <div class="description">
                     <p> Taipei 101 <br> $2,000,000,000 </p>
-                    <input class="addCartButton" type="submit" name="taipei" value="Add to Cart"><br>
+                    <form method="post">
+                        <input class="addCartButton" type="submit" name="taipei" value="Add to Cart"><br>
+                    </form>
                 </div>
             </div>
         </div>
