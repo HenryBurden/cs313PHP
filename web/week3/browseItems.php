@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['numItems'])) {
     $_SESSION['numItems'] = 0;
- }
+}
 
 if (array_key_exists('seoul', $_POST)) {
     $_SESSION['numItems'] += 1;
@@ -55,7 +55,8 @@ $numItems = $_SESSION['numItems'];
                 <div class="description">
                     <p> Seoul Lotte World Tower <br> $385,000,000 </p>
                     <form method="post">
-                        <input class="addCartButton" type="submit" name="addCartButton" id="seoul" value="Add to Cart"><br>
+                        <input class="addCartButton" type="submit" name="seoul" id="seoul"
+                            value="Add to Cart"><br>
                     </form>
                 </div>
             </div>
