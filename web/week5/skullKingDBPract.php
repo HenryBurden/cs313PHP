@@ -29,9 +29,9 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   echo $row['player_name'];
   $statement2 = $db->query('SELECT bet, score FROM round WHERE player_id = $playerCount');
-    while ($row = $statement2->fetch(PDO::FETCH_ASSOC))
+    while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC))
     {
-        echo "<br>" . $row['bet'] . "  " . $row[score];
+        echo "<br>" . $row2['bet'] . "  " . $row2['score'];
     }
 }
 
