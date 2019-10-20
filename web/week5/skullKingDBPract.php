@@ -34,6 +34,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         echo "<br>" . $row2['bet'] . "  " . $row2['score'];
     }
 }
+echo '<br>';
 
 
 
