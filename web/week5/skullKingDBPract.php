@@ -32,7 +32,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 $statement = $db->query('SELECT bet, score FROM round WHERE player_id = 2');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo $row['bet'] . "  " . $row[score];
+  echo "<br>" . $row['bet'] . "  " . $row[score];
 }
 
 ?>
