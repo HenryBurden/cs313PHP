@@ -27,7 +27,8 @@ echo '<h1>ScoreCard</h1>';
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   echo $row['player_name'];
-  $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $row['player_id']");
+  $playerID = $row['player_id']
+  $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $playerID");
     while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC))
     {
         echo "<br>" . $row2['bet'] . "  " . $row2['score'];
