@@ -42,7 +42,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   Book:    <input type="text"  name="book"><br>
   Chapter: <input type="text"  name="chapter"><br>
   Verse:   <input type="text"  name="verse"><br>
-  Content: <input type="textarea" rows="10" cols="50" name="content"><br>
+  Content: <textarea rows="10" cols="50" name="content"></textarea>
   <input type="submit">
 </form>
 </body>
