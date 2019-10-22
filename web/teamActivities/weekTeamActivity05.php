@@ -29,6 +29,15 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - "' . $row['content'] .'"<br/>';
 }
 
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+<body>
 <form action="" method="get">
   Book:    <input type="text"  name="book"><br>
   Chapter: <input type="text"  name="chapter"><br>
@@ -36,5 +45,5 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   Content: <input type="textarea" rows="10" cols="50" name="content"><br>
   <input type="submit">
 </form>
-
-?>
+</body>
+</html>
