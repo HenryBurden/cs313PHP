@@ -30,10 +30,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 
 <form action="welcome_get.php" method="get">
-  Book:    <input type="text" name="book"><br>
-  Chapter: <input type="text" name="chapter"><br>
-  Verse:    <input type="text" name="verse"><br>
-  Content: <input type="textarea" name="content"><br>
+  Book:    <input type="text"  name="book"><br>
+  Chapter: <input type="text"  name="chapter"><br>
+  Verse:   <input type="text"  name="verse"><br>
+  Content: <input type="textarea" rows="10" cols="50" name="content"><br>
   <input type="submit">
 </form>
 
