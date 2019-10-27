@@ -24,7 +24,7 @@ catch (PDOException $ex)
 
 $players[] = "";
 $bets = array();
-$scores[] = "";
+$scores = array();
 $playerCount = 0;
 
 $statement = $db->query('SELECT player_name, player_id FROM player WHERE scorecard_id = 1');
@@ -55,12 +55,12 @@ for($i = 0; $i < count($players); $i++)
   for($j = 0; $j < count($bets[$i]); $j++)
   {
     echo $j;
-    echo $bets[$i][$j];
+    echo "$bets[$i][$j]";
   }
   for($j = 0; $j < count($scores[$i]); $j++)
   {
     echo $j;
-    echo $scores[$i][$j];
+    echo "$scores[$i][$j]";
   }
 }
 
