@@ -33,19 +33,15 @@ $player_id = $_POST['player_id'];
 try
 {
    $query = 'UPDATE round SET score = :score WHERE player_id = :player_id AND round_number = :round_number';
+   echo $query;
    $statement = $db->prepare($query);
    $statement->bindValue(':score', $value);
    $statement->bindValue(':player_id', $player_id);
    $statement->bindValue(':round_number', $round_number);
    $statement->execute();
-
-	// Now we bind the values to the placeholders. This does some nice things
-	// including sanitizing the input with regard to sql commands.
 }
 catch (Exception $ex)
 {
-	// Please be aware that you don't want to output the Exception message in
-	// a production environment
 	echo "Error with DB. Details: $ex";
 	die();
 }
