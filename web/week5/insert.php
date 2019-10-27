@@ -49,7 +49,7 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: skullKindDBPract.php");
+header("Location: skullKingDBPract.php");
 die();
 
 //echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
