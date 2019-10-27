@@ -23,7 +23,7 @@ catch (PDOException $ex)
 }
 
 $players[] = "";
-$bets[] = "";
+$bets = array();
 $scores[] = "";
 $playerCount = 0;
 
