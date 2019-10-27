@@ -88,7 +88,7 @@ for($rows = 0; $rows < 10; $rows++)
   echo '<tr>';
   for($columns = 0; $columns < 6; $columns++)
   {
-    echo '<td><input style="width: 30px;" type="number" value="0"></td><td><input style="width: 40px;" type="number" value="0"></td>';
+    echo '<td><input id="bet" type="number" value="0"></td><td><input type="number" id="score" value="0"></td>';
   }
   echo '</tr>';
 }
@@ -106,6 +106,6 @@ for($rows = 0; $rows < 10; $rows++)
 </head>
 
 <body>
-  
+
 </body>
 </html>
