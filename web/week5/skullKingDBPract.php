@@ -54,10 +54,12 @@ for($i = 0; $i < count($players); $i++)
   echo count($bets[$i]);
   for($j = 0; $j < count($bets[$i]); $j++)
   {
+    echo $j;
     echo $bets[$i][$j];
   }
   for($j = 0; $j < count($scores[$i]); $j++)
   {
+    echo $j;
     echo $scores[$i][$j];
   }
 }
