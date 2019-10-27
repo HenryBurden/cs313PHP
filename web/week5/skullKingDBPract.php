@@ -54,7 +54,7 @@ for($i = 0; $i < count($players); $i++)
   echo "<br>$players[$i]";
   for($j = 0; $j < 2; $j++;)
   {
-    echo "$bets[0][0]";
+    echo "$bets[0[0]]";
   }
 }
 
