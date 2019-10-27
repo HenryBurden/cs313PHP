@@ -32,9 +32,7 @@ $player_id = $_POST['player_id'];
 
 try
 {
-    //INSERT INTO round(bet, score, round_number, player_id) VALUES(4, 10, 1, 2);
    $query = 'UPDATE round SET score = :score WHERE player_id = :player_id AND round_number = :round_number';
-   //(course_id, title, content, date, time) VALUES(:course, :title, :content, :date, :time)';
    $statement = $db->prepare($query);
    $statement->bindValue(':score', $value);
    $statement->bindValue(':player_id', $player_id);
@@ -44,8 +42,8 @@ try
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
 }
-header("Location: skullKindDBPract.php");
+//header("Location: skullKindDBPract.php");
 die();
 
-//echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
+echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
 ?>
