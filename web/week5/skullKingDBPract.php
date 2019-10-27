@@ -52,6 +52,7 @@ for($i = 0; $i < count($players); $i++)
   echo '<th colspan="2">'.$players[$i].'</th>';
 }
 echo '</tr>';
+echo '<tr><td>Bet</td><td>Score</td></tr>';
 for($i = 0; $i < count($players); $i++) 
 {
   echo '<tr>';
