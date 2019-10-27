@@ -22,10 +22,16 @@ catch (PDOException $ex)
   die();
 }
 
+$players[] = "";
+$bets = array ( array (""));
+$scores = array ( array (""));
+$playerCount = 0;
+
 $statement = $db->query('SELECT player_name, player_id FROM player WHERE scorecard_id = 1');
 echo '<table><h1>ScoreCard</h1>';
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
+  $players[$playerCount++] = $row['player_name'];
   echo '<tr><th colspan="2">'.$row['player_name'].'</th>';
   echo '<tr><td>Bet</td><td>Score</td></tr>';
   $playerID = $row['player_id'];
@@ -37,6 +43,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 echo '</table>';
 
-
+echo $players;
 
 ?>
