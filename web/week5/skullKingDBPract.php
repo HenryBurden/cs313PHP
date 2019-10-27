@@ -93,12 +93,12 @@ echo "</table></form></div>";
 
     <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
     <script defer>
-      function updateDBScore(value, scorecard_id, player_id, round_number + 1) {
+      function updateDBScore(value, scorecard_id, player_id, round_number) {
         /*console.log("value: " + value);
         console.log("scorecard ID: " + scorecard_id);
         console.log("player ID: " + player_id);
         console.log("round_number: " + round_number);*/
-        
+        round_number++;
         $.ajax({
         type: 'POST',
         url: 'insert.php',
