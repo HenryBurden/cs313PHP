@@ -72,7 +72,7 @@ for($i = 0; $i < count($players); $i++)
 echo '</table>';
 
 
-echo '<table><tr>';
+echo '<div id="scoreCard"><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
   echo '<th colspan="2"><input type="text" id="name" value="Name"></th>';
@@ -92,6 +92,7 @@ for($rows = 0; $rows < 10; $rows++)
   }
   echo '</tr>';
 }
+echo "</table></div>";
 ?>
 
 
