@@ -44,6 +44,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 echo '</table>';
 
 foreach($players as &$player)
-  echo $player;
+  echo "<br>$player";
 
 ?>
