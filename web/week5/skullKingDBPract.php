@@ -32,7 +32,6 @@ echo '<table><h1>ScoreCard</h1>';
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   $players[$playerCount] = $row['player_name'];
-  $playerCount++;
   echo '<tr><th colspan="2">'.$row['player_name'].'</th>';
   echo '<tr><td>Bet</td><td>Score</td></tr>';
   $playerID = $row['player_id'];
@@ -45,6 +44,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
       $roundCount++;
         echo '<tr><td><input type="text" id="bet" value="'.$row2['bet'].'"></td><td><input type="text" id="score" value="'.$row2['score'].'"></td></tr>';
     }
+  $playerCount++;
 }
 echo '</table>';
 
