@@ -34,9 +34,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
         echo '<tr><td>'.$row2['bet'].'</td><td>'.$row2['score'].'</td></tr>';
     }
-    echo '</table>';
 }
-
+echo '</table>';
 
 
 
