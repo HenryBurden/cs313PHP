@@ -29,6 +29,7 @@ catch (PDOException $ex)
  */
 $scorecard_id = 1;
 $players[] = "";
+$playerIDs[] = "";
 $bets = array();
 $scores = array();
 $playerCount = 0;
@@ -37,6 +38,7 @@ $statement = $db->query('SELECT player_name, player_id FROM player WHERE scoreca
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   $players[$playerCount] = $row['player_name'];
+  $playerIDs[$playerCount] = $row['player_id'];
   $playerID = $row['player_id'];
   $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $playerID");
   $roundCount = 0;
@@ -72,7 +74,7 @@ for($rows = 0; $rows < 10; $rows++)
 
     //score inputs
     echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
-    echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$columns.', '.$rows.')" ></td>';
+    echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$playerIDs[$columns].', '.$rows.')" ></td>';
   }
   echo '</tr>';
 }
