@@ -69,7 +69,7 @@ for($rows = 0; $rows < 10; $rows++)
   for($columns = 0; $columns < 6; $columns++)
   {
     echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"></td>';
-    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'" onchange="updateDBScore()" value="'.$scores[$columns][$rows].'"></td>';
+    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'" onchange="updateDBScore(this)" value="'.$scores[$columns][$rows].'"></td>';
   }
   echo '</tr>';
 }
@@ -102,8 +102,8 @@ $statement->execute();*/
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
     <script defer>
-      function updateDBScore() {
-        console.log("here");
+      function updateDBScore(element) {
+        console.log(element.id);
         //console.log($('#form'));
         $.post("insert.php", $('#form').serialize());
       }
