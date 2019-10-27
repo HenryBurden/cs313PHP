@@ -104,7 +104,7 @@ $statement->execute();*/
     <script defer>
       function updateDBScore() {
         console.log("here");
-        console.log($('#form'));
+        //console.log($('#form'));
         $.post("insert.php", $('#form').serialize());
       }
 
