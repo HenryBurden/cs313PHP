@@ -79,21 +79,6 @@ for($rows = 0; $rows < 10; $rows++)
   echo '</tr>';
 }
 echo "</table></form></div>";
-
-
-/**
- * Update DB
- */
-
-/*
-$query = 'INSERT INTO note(course_id, title, content, date, time) VALUES(:course, :title, :content, :date, :time)';
-$statement = $db->prepare($query);
-$statement->bindValue(':course', $course);
-$statement->bindValue(':title', $title);
-$statement->bindValue(':content', $note);
-$statement->bindValue(':date', '\'now()\'');
-$statement->bindValue(':time', $time);
-$statement->execute();*/
 ?>
 
 
