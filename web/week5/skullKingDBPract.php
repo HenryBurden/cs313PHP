@@ -72,7 +72,7 @@ for($rows = 0; $rows < 10; $rows++)
 
     //score inputs
     echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
-    echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$players[$columns].', '.$rows.')" ></td>';
+    echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$columns.', '.$rows.')" ></td>';
   }
   echo '</tr>';
 }
@@ -104,14 +104,23 @@ $statement->execute();*/
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
-    <script defer>
-      function updateDBScore(value, scorecard_id, player_name, round_number) {
+    <script src="//code.jquery.com/jquery-1.12.0.min.js" defer>
+      function updateDBScore(value, scorecard_id, player_id, round_number) {
         console.log("value: " + value);
         console.log("scorecard ID: " + scorecard_id);
-        console.log("player name: " + player_name);
+        console.log("player ID: " + player_id);
         console.log("round_number: " + round_number);
-        //console.log($('#form'));
-        //$.post("insert.php", $('#form').serialize());
+
+        $.ajax({
+        type: 'POST',
+        url: 'insert.php',
+        data: { value: value, scorecard_id: scorecard_id, player_id: player_id, round_number: round_number },
+        success: function(response) {
+            $('#result').html(response);
+        }
+        /*
+        xhttp.open("GET", `insert.php?scorecard_id=${scorecard_id}&player_id=${player_id}&round_number=${round_number}&value=${value}`, true);
+        xhttp.send();*/
       }
 
       function updateDBBet(scorecard_id, round_number, player_id, bet) {
