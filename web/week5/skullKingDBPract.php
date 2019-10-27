@@ -69,7 +69,10 @@ for($rows = 0; $rows < 10; $rows++)
   for($columns = 0; $columns < 6; $columns++)
   {
     echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"></td>';
-    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'" onchange="updateDBScore(this.value, '.$scorecard_id.')" value="'.$scores[$columns][$rows].'"></td>';
+
+    //score inputs
+    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
+    echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$columns.', '.$rows.')" ></td>';
   }
   echo '</tr>';
 }
@@ -102,11 +105,13 @@ $statement->execute();*/
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
     <script defer>
-      function updateDBScore(value, scorecard_id) {
-        console.log(value);
-        console.log(scorecard_id);
+      function updateDBScore(value, scorecard_id, player_id, round_number) {
+        console.log("value: " + value);
+        console.log("scorecard ID: " + scorecard_id);
+        console.log("player ID: " + player_id);
+        console.log("round_number: " + round_number);
         //console.log($('#form'));
-        $.post("insert.php", $('#form').serialize());
+        //$.post("insert.php", $('#form').serialize());
       }
 
       function updateDBBet(scorecard_id, round_number, player_id, bet) {
