@@ -27,6 +27,7 @@ catch (PDOException $ex)
 /**
  * Get Data From DB
  */
+$scorecard_id = 1;
 $players[] = "";
 $bets = array();
 $scores = array();
@@ -49,7 +50,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 
 /**
- * Create Scorecard
+ * Create Scorecard with current DB values
  */
 echo '<div id="scoreCard"><h1>ScoreCard</h1><form id="form"><table><tr>';
 for($i = 0; $i < 6; $i++)
@@ -68,7 +69,7 @@ for($rows = 0; $rows < 10; $rows++)
   for($columns = 0; $columns < 6; $columns++)
   {
     echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"></td>';
-    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'" value="'.$scores[$columns][$rows].'"></td>';
+    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'" onchange="updateDBScore()" value="'.$scores[$columns][$rows].'"></td>';
   }
   echo '</tr>';
 }
@@ -101,8 +102,17 @@ $statement->execute();*/
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
     <script>
-      function updateDB() {
+      function updateDBScore() {
+        console.log($('#form'));
+        $.post("insert.php", $('#form').serialize());
+      }
 
+      function updateDBBet(scorecard_id, round_number, player_id, bet) {
+        $.post("insert.php")
+      }
+
+      function updateDBName(scorecard_id, player_id, name) {
+        $.post("insert.php")
       }
     </script>
 </head>
