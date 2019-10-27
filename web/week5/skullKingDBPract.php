@@ -75,7 +75,7 @@ echo '</table>';
 echo '<table><tr>';
 for($i = 0; $i < 6; $i++)
 {
-  echo '<th colspan="2"><input type="text" value="Name"></th>';
+  echo '<th colspan="2"><input type="text" id="name" value="Name"></th>';
 }
 echo '</tr><tr>';
 for($i = 0; $i < 6; $i++)
