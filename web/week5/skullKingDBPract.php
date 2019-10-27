@@ -23,8 +23,8 @@ catch (PDOException $ex)
 }
 
 $players[] = "";
-$bets = "";
-$scores = "";
+$bets[] = "";
+$scores[] = "";
 $playerCount = 0;
 
 $statement = $db->query('SELECT player_name, player_id FROM player WHERE scorecard_id = 1');
