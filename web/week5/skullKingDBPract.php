@@ -53,17 +53,19 @@ for($i = 0; $i < count($players); $i++)
 
 for($i = 0; $i < count($players); $i++) 
 {
+  echo '<tr>';
   for($j = 0; $j < count($bets[$i]); $j++)
   {
     //echo $bets[$i][$j].'<br>';
-    echo '<tr><td><input type="text" id="bet" value="'.$bets[$i][$j].'"></td>';
+    echo '<td><input type="text" id="bet" value="'.$bets[$i][$j].'"></td>';
   }
 
   for($j = 0; $j < count($scores[$i]); $j++)
   {
     //echo $scores[$i][$j].'<br>';
-    echo '<td><input type="text" id="score" value="'.$scores[$i][$j].'"></td></tr>';
+    echo '<td><input type="text" id="score" value="'.$scores[$i][$j].'"></td>';
   }
+  echo '</tr>';
 }
 echo '</table>';
 ?>
