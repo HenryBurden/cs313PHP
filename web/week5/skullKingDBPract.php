@@ -70,4 +70,28 @@ for($i = 0; $i < count($players); $i++)
   echo '</tr>';
 }
 echo '</table>';
+
+
+echo '<table><tr>';
+for($i = 0; $i < 6; $i++)
+{
+  echo '<th colspan="2">Name</th>';
+}
+echo '</tr><tr>';
+for($i = 0; $i < 6; $i++)
+{
+  echo '<td>Bet</td><td>Score</td>';
+}
+echo '</tr><tr>';
+for($j = 0; $j < 10; $j++)
+{
+  echo '<tr>';
+  for($i = 0; $i < 6; $i++)
+  {
+    echo '<td><input type="number" value="0"></td><td><input type="number" value="0"></td>';
+  }
+  echo '</tr>';
+}
+
+
 ?>
