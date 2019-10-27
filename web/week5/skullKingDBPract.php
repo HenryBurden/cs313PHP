@@ -39,8 +39,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   $roundCount = 0;
     while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC))
     {
-      $bets[$playerCount][$roundCount] = $rwo2['bet'];
-      $scores[$playerCount][$roundCount] = $rwo2['score'];
+      $bets[$playerCount][$roundCount] = $row2['bet'];
+      $scores[$playerCount][$roundCount] = $row2['score'];
       $roundCount++;
         echo '<tr><td><input type="text" id="bet" value="'.$row2['bet'].'"></td><td><input type="text" id="score" value="'.$row2['score'].'"></td></tr>';
     }
@@ -54,7 +54,7 @@ for($i = 0; $i < count($players); $i++)
   echo count($bets[$i]);
   for($j = 0; $j < count($bets[$i]); $j++)
   {
-    echo $bets[$i][$j] + 1;
+    echo $bets[$i][$j];
   }
   for($j = 0; $j < count($scores[$i]); $j++)
   {
