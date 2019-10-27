@@ -75,7 +75,7 @@ echo '</table>';
 echo '<div id="scoreCard"><h1>ScoreCard</h1><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
-  echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="Name"></th>';
+  echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"></th>';
 }
 echo '</tr><tr>';
 for($i = 0; $i < 6; $i++)
