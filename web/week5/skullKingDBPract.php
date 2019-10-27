@@ -88,7 +88,7 @@ for($j = 0; $j < 10; $j++)
   echo '<tr>';
   for($i = 0; $i < 6; $i++)
   {
-    echo '<td><input style="width: 30px;" type="number" value="0"></td><td><input style="width: 30px;" type="number" value="0"></td>';
+    echo '<td><input style="width: 30px;" type="number" value="0"></td><td><input style="width: 40px;" type="number" value="0"></td>';
   }
   echo '</tr>';
 }
