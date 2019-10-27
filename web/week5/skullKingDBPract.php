@@ -51,7 +51,7 @@ echo '</table>';
 for($i = 0; $i < count($players); $i++) 
 {
   echo "<br>$players[$i]";
-  echo $bets[0][0];
+  echo $bets[1][1];
 }
 
 ?>
