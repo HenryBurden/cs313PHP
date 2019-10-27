@@ -42,8 +42,15 @@ try
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
 }
-//header("Location: skullKindDBPract.php");
+catch (Exception $ex)
+{
+	// Please be aware that you don't want to output the Exception message in
+	// a production environment
+	echo "Error with DB. Details: $ex";
+	die();
+}
+header("Location: skullKindDBPract.php");
 die();
 
-echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
+//echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
 ?>
