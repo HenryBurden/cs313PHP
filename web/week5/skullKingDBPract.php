@@ -43,6 +43,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 echo '</table>';
 
-echo $players;
+foreach($players as &$player)
+  echo $player;
 
 ?>
