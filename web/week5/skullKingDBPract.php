@@ -104,13 +104,14 @@ $statement->execute();*/
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
-    <script src="//code.jquery.com/jquery-1.12.0.min.js" defer>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
+    <script defer>
       function updateDBScore(value, scorecard_id, player_id, round_number) {
         console.log("value: " + value);
         console.log("scorecard ID: " + scorecard_id);
         console.log("player ID: " + player_id);
         console.log("round_number: " + round_number);
-        /*
+        
         $.ajax({
         type: 'POST',
         url: 'insert.php',
