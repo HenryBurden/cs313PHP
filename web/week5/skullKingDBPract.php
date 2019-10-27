@@ -55,7 +55,7 @@ for($i = 0; $i < count($players); $i++)
   for($j = 0; $j < count($bets[$i]); $j++)
   {
     echo $j;
-    echo '<input type="text" id="bet" value="'.$bets[$i][$j].'">';
+    echo '<input type="text" id="bet" value="'.(string)$bets[$i][$j].'">';
     echo "$bets[$i][$j]";
   }
   for($j = 0; $j < count($scores[$i]); $j++)
