@@ -92,6 +92,20 @@ for($rows = 0; $rows < 10; $rows++)
   }
   echo '</tr>';
 }
-
-
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Skull King Score Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="skullKing.css">
+</head>
+
+<body>
+  
+</body>
+</html>
