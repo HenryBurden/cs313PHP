@@ -110,7 +110,7 @@ $statement->execute();*/
         console.log("scorecard ID: " + scorecard_id);
         console.log("player ID: " + player_id);
         console.log("round_number: " + round_number);
-
+        /*
         $.ajax({
         type: 'POST',
         url: 'insert.php',
