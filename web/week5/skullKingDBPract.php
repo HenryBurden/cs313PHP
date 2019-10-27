@@ -75,7 +75,7 @@ echo '</table>';
 echo '<table><tr>';
 for($i = 0; $i < 6; $i++)
 {
-  echo '<th colspan="2">Name</th>';
+  echo '<th colspan="2"><input type="text" value="Name"></th>';
 }
 echo '</tr><tr>';
 for($i = 0; $i < 6; $i++)
@@ -83,10 +83,10 @@ for($i = 0; $i < 6; $i++)
   echo '<td>Bet</td><td>Score</td>';
 }
 echo '</tr><tr>';
-for($j = 0; $j < 10; $j++)
+for($rows = 0; $rows < 10; $rows++)
 {
   echo '<tr>';
-  for($i = 0; $i < 6; $i++)
+  for($columns = 0; $columns < 6; $columns++)
   {
     echo '<td><input style="width: 30px;" type="number" value="0"></td><td><input style="width: 40px;" type="number" value="0"></td>';
   }
