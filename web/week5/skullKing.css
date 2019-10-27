@@ -6,7 +6,7 @@
     width: 40px;
 }
 
-#name {
+.name {
     width: 100px;
     text-align: center;
     border-radius: 6px;
