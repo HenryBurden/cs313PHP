@@ -48,8 +48,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 echo '</table>';
 
-echo $players.length();
-for($i = 0; $i < $players.length(); $i++) 
+echo count($players);
+for($i = 0; $i < count($players); $i++) 
 {
   echo "<br>$players[$i]";
   /*for($j = 0; $j < 5; $j++;)
