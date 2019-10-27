@@ -107,10 +107,10 @@ $statement->execute();*/
     <script src="//code.jquery.com/jquery-1.12.0.min.js" defer></script>
     <script defer>
       function updateDBScore(value, scorecard_id, player_id, round_number) {
-        console.log("value: " + value);
+        /*console.log("value: " + value);
         console.log("scorecard ID: " + scorecard_id);
         console.log("player ID: " + player_id);
-        console.log("round_number: " + round_number);
+        console.log("round_number: " + round_number);*/
         
         $.ajax({
         type: 'POST',
@@ -121,9 +121,6 @@ $statement->execute();*/
             console.log(response);
           }
         });
-        /*
-        xhttp.open("GET", `insert.php?scorecard_id=${scorecard_id}&player_id=${player_id}&round_number=${round_number}&value=${value}`, true);
-        xhttp.send();*/
       }
 
       function updateDBBet(scorecard_id, round_number, player_id, bet) {
