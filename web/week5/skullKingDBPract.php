@@ -118,7 +118,8 @@ $statement->execute();*/
         data: { value: value, scorecard_id: scorecard_id, player_id: player_id, round_number: round_number },
         success: function(response) {
             $('#result').html(response);
-        }
+          }
+        });
         /*
         xhttp.open("GET", `insert.php?scorecard_id=${scorecard_id}&player_id=${player_id}&round_number=${round_number}&value=${value}`, true);
         xhttp.send();*/
