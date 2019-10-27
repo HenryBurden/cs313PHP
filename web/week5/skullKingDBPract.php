@@ -44,7 +44,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 
 
-echo '<table><h1>ScoreCard</h1>';
+echo '<table>';
 echo '<tr>';
 for($i = 0; $i < count($players); $i++) 
 {
@@ -72,7 +72,7 @@ for($i = 0; $i < count($players); $i++)
 echo '</table>';
 
 
-echo '<div id="scoreCard"><table><tr>';
+echo '<div id="scoreCard"><h1>ScoreCard</h1><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
   echo '<th colspan="2"><input type="text" id="name" value="Name"></th>';
