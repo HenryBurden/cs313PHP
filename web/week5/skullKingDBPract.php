@@ -31,7 +31,8 @@ $statement = $db->query('SELECT player_name, player_id FROM player WHERE scoreca
 echo '<table><h1>ScoreCard</h1>';
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  $players[$playerCount++] = $row['player_name'];
+  $players[$playerCount] = $row['player_name'];
+  $playerCount++;
   echo '<tr><th colspan="2">'.$row['player_name'].'</th>';
   echo '<tr><td>Bet</td><td>Score</td></tr>';
   $playerID = $row['player_id'];
