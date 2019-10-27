@@ -45,12 +45,13 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 
 
 echo '<table><h1>ScoreCard</h1>';
+echo '<tr>';
 for($i = 0; $i < count($players); $i++) 
 {
   //echo "<br>$players[$i]";
-  echo '<tr><th colspan="2">'.$players[$i].'</th></tr>';
+  echo '<th colspan="2">'.$players[$i].'</th>';
 }
-
+echo '</tr>';
 for($i = 0; $i < count($players); $i++) 
 {
   echo '<tr>';
