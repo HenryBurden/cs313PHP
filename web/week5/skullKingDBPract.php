@@ -88,7 +88,8 @@ for($rows = 0; $rows < 10; $rows++)
   echo '<tr>';
   for($columns = 0; $columns < 6; $columns++)
   {
-    echo '<td><input id="bet" type="number" value="'.$bets[$columns][$rows].'"></td><td><input type="number" id="score" value="0"></td>';
+    echo '<td><input id="bet" type="number" value="'.$bets[$columns][$rows].'"></td>'
+    echo '<td><input type="number" id="score" value="'.$scores[$columns][$rows].'"></td>';
   }
   echo '</tr>';
 }
