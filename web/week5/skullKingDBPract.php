@@ -48,8 +48,7 @@ echo '<table><h1>ScoreCard</h1>';
 for($i = 0; $i < count($players); $i++) 
 {
   //echo "<br>$players[$i]";
-  echo '<tr><th colspan="2">'.$players[$i].'</th>';
-  echo '<tr><td>Bet</td><td>Score</td></tr>';
+  echo '<tr><th colspan="2">'.$players[$i].'</th></tr>';
 }
 
 for($i = 0; $i < count($players); $i++) 
