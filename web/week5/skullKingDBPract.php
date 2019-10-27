@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Connect to DB
+ */
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -22,6 +24,9 @@ catch (PDOException $ex)
   die();
 }
 
+/**
+ * Get Data From DB
+ */
 $players[] = "";
 $bets = array();
 $scores = array();
@@ -43,7 +48,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   $playerCount++;
 }
 
-echo '<div id="scoreCard"><h1>ScoreCard</h1><table><tr>';
+/**
+ * Create Scorecard
+ */
+echo '<div id="scoreCard"><h1>ScoreCard</h1><table><tr><form id="form">';
 for($i = 0; $i < 6; $i++)
 {
   echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"></th>';
@@ -64,11 +72,13 @@ for($rows = 0; $rows < 10; $rows++)
   }
   echo '</tr>';
 }
-echo "</table></div>";
+echo "</form></table></div>";
 
-function updateDB() {
 
-}
+/**
+ * Update DB
+ */
+
 /*
 $query = 'INSERT INTO note(course_id, title, content, date, time) VALUES(:course, :title, :content, :date, :time)';
 $statement = $db->prepare($query);
@@ -89,6 +99,12 @@ $statement->execute();*/
     <title>Skull King Score Card</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
+
+    <script>
+      function updateDB() {
+
+      }
+    </script>
 </head>
 
 <body>
