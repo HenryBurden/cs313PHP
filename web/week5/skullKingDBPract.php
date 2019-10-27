@@ -36,8 +36,12 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   echo '<tr><td>Bet</td><td>Score</td></tr>';
   $playerID = $row['player_id'];
   $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $playerID");
+  $roundCount = 0;
     while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC))
     {
+      $bets[$playerCount][$roundCount] = $rwo2['bet'];
+      $scores[$playerCount][$roundCount] = $rwo2['score'];
+      $roundCount++;
         echo '<tr><td><input type="text" id="bet" value="'.$row2['bet'].'"></td><td><input type="text" id="score" value="'.$row2['score'].'"></td></tr>';
     }
 }
