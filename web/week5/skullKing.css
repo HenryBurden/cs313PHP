@@ -13,3 +13,9 @@
     border: 2px solid gray;
     font-weight: bold;
 }
+
+table {
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid gray;
+}
