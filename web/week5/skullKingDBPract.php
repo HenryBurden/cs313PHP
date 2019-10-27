@@ -43,35 +43,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   $playerCount++;
 }
 
-
-echo '<table>';
-echo '<tr>';
-for($i = 0; $i < count($players); $i++) 
-{
-  //echo "<br>$players[$i]";
-  echo '<th colspan="2">'.$players[$i].'</th>';
-}
-echo '</tr>';
-echo '<tr><td>Bet</td><td>Score</td></tr>';
-for($i = 0; $i < count($players); $i++) 
-{
-  echo '<tr>';
-  for($j = 0; $j < count($bets[$i]); $j++)
-  {
-    //echo $bets[$i][$j].'<br>';
-    echo '<td><input type="text" id="bet" value="'.$bets[$j][$i].'"></td>';
-  }
-
-  for($j = 0; $j < count($scores[$i]); $j++)
-  {
-    //echo $scores[$i][$j].'<br>';
-    echo '<td><input type="text" id="score" value="'.$scores[$i][$j].'"></td>';
-  }
-  echo '</tr>';
-}
-echo '</table>';
-
-
 echo '<div id="scoreCard"><h1>ScoreCard</h1><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
@@ -94,6 +65,19 @@ for($rows = 0; $rows < 10; $rows++)
   echo '</tr>';
 }
 echo "</table></div>";
+
+function updateDB() {
+
+}
+/*
+$query = 'INSERT INTO note(course_id, title, content, date, time) VALUES(:course, :title, :content, :date, :time)';
+$statement = $db->prepare($query);
+$statement->bindValue(':course', $course);
+$statement->bindValue(':title', $title);
+$statement->bindValue(':content', $note);
+$statement->bindValue(':date', '\'now()\'');
+$statement->bindValue(':time', $time);
+$statement->execute();*/
 ?>
 
 
