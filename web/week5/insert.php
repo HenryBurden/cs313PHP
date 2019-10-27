@@ -29,11 +29,10 @@ $scorecard_id = $_POST['scorecard_id'];
 $round_number = $_POST['round_number'];
 $player_id = $_POST['player_id'];
 
-
+$query = '';
 try
 {
    $query = 'UPDATE round SET score = :score WHERE player_id = :player_id AND round_number = :round_number';
-   echo $query;
    $statement = $db->prepare($query);
    $statement->bindValue(':score', $value);
    $statement->bindValue(':player_id', $player_id);
@@ -45,7 +44,8 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: skullKingDBPract.php");
+echo $query;
+//header("Location: skullKingDBPract.php");
 die();
 
 //echo "Value: $value, card ID: $scorecard_id, Round Number: $round_number, player_id: $player_id";
