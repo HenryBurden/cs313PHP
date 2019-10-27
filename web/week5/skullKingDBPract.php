@@ -47,7 +47,13 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 }
 echo '</table>';
 
-foreach($players as &$player)
-  echo "<br>$player";
+for($i = 0; $i < $players.length(); $i++) 
+{
+  echo "<br>$players[$i]";
+  for($j = 0; $j < 5; $j++;)
+  {
+    echo $bets[i][j].$scores[i][j];
+  }
+}
 
 ?>
