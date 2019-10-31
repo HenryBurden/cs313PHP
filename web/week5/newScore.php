@@ -48,7 +48,7 @@ try
         $statement = $db->prepare($query);
         $statement->execute();//create new player
         $row = $statement->fetch(PDO::FETCH_ASSOC);//get the returning new id row
-        $player_id = $row['scorecard_id'];//parse the row to get the id
+        $player_id = $row['player_id'];//parse the row to get the id
 
         for($j = 1; $j <= 10; $j++)//create 10 rounds for each player
         {
