@@ -36,7 +36,8 @@ try
    $query = "INSERT INTO scorecard DEFAULT VALUES RETURNING scorecard_id";
    $statement = $db->prepare($query);
    $id = $statement->execute();
-   echo "id: $id['scorecard_id'] <br> query: $query";
+   var_dump($id);
+   echo "id: var_dump($id) <br> query: $query";
 }
 catch (Exception $ex)
 {
