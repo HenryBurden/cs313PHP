@@ -32,7 +32,7 @@ $player_id = $_POST['player_id'];
 $query = '';
 try
 {
-   $query = "UPDATE round SET score = ':score' WHERE player_id = ':player_id' AND round_number = ':round_number'";
+   $query = "UPDATE round SET score = :score WHERE player_id = :player_id AND round_number = :round_number";
    $statement = $db->prepare($query);
    $statement->bindValue(':score', $value);
    $statement->bindValue(':player_id', $player_id);
