@@ -35,9 +35,10 @@ try
 {
    $query = "INSERT INTO scorecard DEFAULT VALUES RETURNING scorecard_id";
    $statement = $db->prepare($query);
-   $id = $statement->execute();
-   var_dump($id);
-   echo "id: var_dump($id) <br> query: $query";
+   $statement->execute();
+   $row = $statement->fetch(PDO::FETCH_ASSOC);
+   $id = $row['scorecard_id'];
+   echo $id;
 }
 catch (Exception $ex)
 {
