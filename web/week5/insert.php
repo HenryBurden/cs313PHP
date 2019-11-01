@@ -52,7 +52,8 @@ if(!is_null($value))//update a score
     die();
   }
 }
-else if(!is_null($bet))//update a bet
+
+if(!is_null($bet))//update a bet
 {
   try
   {
@@ -69,7 +70,7 @@ else if(!is_null($bet))//update a bet
     die();
   }
 }
-else if(!is_null($name))//update a name
+if(!is_null($name))//update a name
 {
   try
   {
