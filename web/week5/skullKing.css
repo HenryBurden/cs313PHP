@@ -9,7 +9,7 @@ body {
 .score {
     width: 40px;
 }
-.betcol, .scorecol tr:nth-child(even){
+#betcol, #scorecol tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
