@@ -9,7 +9,7 @@ body {
 .score {
     width: 40px;
 }
-.score tr:nth-child(even){
+.score:nth-child(even){
     background-color: #f2f2f2;
 }
 
