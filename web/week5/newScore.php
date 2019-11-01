@@ -24,12 +24,7 @@ catch (PDOException $ex)
   die();
 }
 
-
-//INSERT INTO scorecard DEFAULT VALUES; ONCE
-
-//INSERT INTO player DEFAULT VALUES; SIX TIMES
-//INSERT INTO player(player_name, scorecard_id) VALUES('Henry', 1);
-//INSERT INTO round(round_number, player_id) VALUES($round_number, $player_id); 10 TIMES FOR EACH PLAYER
+echo 'Loading...';
 
 /**
  * Create new scorecard in DB
@@ -58,7 +53,7 @@ try
         }
    }
 
-   header("Location: skullKingDBPract.php?scorecard_id=$scorecard_id");
+   header("Location: skullKingDBPract.php?scorecard_id=$scorecard_id");//go to the new score card
 
 }
 catch (Exception $ex)
@@ -66,8 +61,4 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-
-
-
-
 ?>
