@@ -59,7 +59,7 @@ for($i = 0; $i < 6; $i++)
 {
   //name inputs
   echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"';
-  echo 'onchange="updateDBName(this.value, '.$playerIDs[$columns].')" ></th>';
+  echo 'onchange="updateDBName(this.value, '.$playerIDs[$i].')" ></th>';
 }
 echo '</tr><tr>';
 for($i = 0; $i < 6; $i++)
