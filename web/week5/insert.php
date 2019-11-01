@@ -70,8 +70,10 @@ if(!is_null($bet))//update a bet
     die();
   }
 }
+
 if(!is_null($name))//update a name
 {
+  echo "IM IN";
   try
   {
     $query = "UPDATE player SET player_name = :player_name WHERE player_id = :player_id";
