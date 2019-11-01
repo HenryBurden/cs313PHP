@@ -34,7 +34,7 @@ $bets = array();
 $scores = array();
 $playerCount = 0;
 
-$statement = $db->query('SELECT player_name, player_id FROM player WHERE scorecard_id = 1');
+$statement = $db->query("SELECT player_name, player_id FROM player WHERE scorecard_id = $scorecard_id");
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   $players[$playerCount] = $row['player_name'];
