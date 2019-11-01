@@ -54,7 +54,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 /**
  * Create Scorecard with current DB values
  */
-echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr><th>Round</th>';
+echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr><th></th>';
 for($i = 0; $i < 6; $i++)
 {
   //name inputs
