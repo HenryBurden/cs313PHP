@@ -40,7 +40,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   $players[$playerCount] = $row['player_name'];
   $playerIDs[$playerCount] = $row['player_id'];
   $playerID = $row['player_id'];
-  $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $playerID ORDER BY round_number");
+  $statement2 = $db->query("SELECT bet, score FROM round WHERE player_id = $playerID ORDER BY player_id, round_number");
   $roundCount = 0;
     while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC))
     {
