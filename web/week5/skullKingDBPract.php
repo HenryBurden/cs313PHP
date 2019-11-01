@@ -83,7 +83,7 @@ for($rows = 0; $rows < 10; $rows++)
   }
   echo '</tr>';
 }
-echo "</table></form><h3 id='id'>$scorecard_id</h3></div>";
+echo "</table></form><div id='id'>Score Card #$scorecard_id</div></div>";
 ?>
 
 
