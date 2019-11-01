@@ -63,7 +63,6 @@ if(isset($_POST['bet']))//update a bet
     $statement->bindValue(':player_id', $player_id);
     $statement->bindValue(':round_number', $round_number);
     $statement->execute();
-    echo "$bet goes into player $player_id's round: $round_number";
   }
   catch (Exception $ex)
   {
