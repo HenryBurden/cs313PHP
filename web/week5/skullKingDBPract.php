@@ -111,7 +111,8 @@ echo "</table></form></div>";
         });
       }
 
-      function updateDBBet(bet, round_number, player_id) {
+      function updateDBBet(bet, player_id, round_number) {
+        rounder_number++;
         $.ajax({
         type: 'POST',
         url: 'insert.php',
