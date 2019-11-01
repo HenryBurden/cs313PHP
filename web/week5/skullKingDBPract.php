@@ -112,7 +112,7 @@ echo "</table></form></div>";
       }
 
       function updateDBBet(bet, player_id, round_number) {
-        rounder_number++;
+        round_number++;
         $.ajax({
         type: 'POST',
         url: 'insert.php',
