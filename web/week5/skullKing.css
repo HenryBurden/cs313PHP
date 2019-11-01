@@ -9,7 +9,7 @@ body {
 .score {
     width: 40px;
 }
-.bet tr:nth-child(3){
+tr:nth-child(3){
     background-color: #f2f2f2;
 }
 
