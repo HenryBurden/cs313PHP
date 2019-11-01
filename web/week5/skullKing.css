@@ -1,3 +1,7 @@
+body {
+    font-weight: bold;
+}
+
 .bet {
     width: 30px;
 }
@@ -8,7 +12,7 @@
 
 .bet, .score {
     border-radius: 6px;
-    font-weight: bold;
+    border-color: black;
 }
 
 .name {
@@ -38,7 +42,6 @@
 table {
     margin-left:auto; 
     margin-right:auto;
-    font-weight: bold;
 }
 
 input {
