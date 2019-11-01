@@ -76,11 +76,11 @@ for($rows = 0; $rows < 10; $rows++)
   for($columns = 0; $columns < 6; $columns++)
   {
     //bet inputs
-    echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"';
+    echo '<td id="betcol"><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"';
     echo 'onchange="updateDBBet(this.value, '.$playerIDs[$columns].', '.$rows.')" ></td>';
 
     //score inputs
-    echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
+    echo '<td id="scorecol><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
     echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$playerIDs[$columns].', '.$rows.')" ></td>';
   }
   echo '</tr>';
