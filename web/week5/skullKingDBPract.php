@@ -54,7 +54,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 /**
  * Create Scorecard with current DB values
  */
-echo '<div id="scoreCard"><h1>ScoreCard</h1><form id="form"><table><tr>';
+echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
   echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"></th>';
@@ -107,12 +107,31 @@ echo "</table></form></div>";
         });
       }
 
-      function updateDBBet(scorecard_id, round_number, player_id, bet) {
-        $.post("insert.php")
+      function updateDBBet(round_number, player_id, bet) {
+        $.ajax({
+        type: 'POST',
+        url: 'insert.php',
+        data: { player_id: player_id, round_number: round_number, bet: bet },
+        success: function(response) {
+            $('#result').html(response);
+            console.log(response);
+            window.location.reload();
+          }
+        });
       }
 
-      function updateDBName(scorecard_id, player_id, name) {
-        $.post("insert.php")
+      function updateDBName(player_id, name) {
+        round_number++;
+        $.ajax({
+        type: 'POST',
+        url: 'insert.php',
+        data: { player_id: player_id, player_name: name },
+        success: function(response) {
+            $('#result').html(response);
+            console.log(response);
+            window.location.reload();
+          }
+        });
       }
     </script>
 </head>
