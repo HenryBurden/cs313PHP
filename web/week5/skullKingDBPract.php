@@ -87,7 +87,7 @@ for($rows = 0; $rows < 10; $rows++)
 }
 
 echo "<tr><td>Totals:</td>";//add the totals
-for($columns = 1; $columns <= 6; $columns++)
+for($columns = 0; $columns < 6; $columns++)
 {
   echo "<td colspan='2'>$playerTotal[$columns]</td> ";
 }
