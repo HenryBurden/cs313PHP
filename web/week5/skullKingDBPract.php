@@ -69,7 +69,7 @@ for($i = 0; $i < 6; $i++)
 echo '</tr><tr>';
 for($rows = 0; $rows < 10; $rows++)
 {
-  echo "<tr><td>$rows</td>";
+  echo "<tr><td>$rows+1</td>";
   for($columns = 0; $columns < 6; $columns++)
   {
     //bet inputs
