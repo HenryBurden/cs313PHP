@@ -89,7 +89,7 @@ for($rows = 0; $rows < 10; $rows++)
 echo "<tr><td>Totals:</td>";//add the totals
 for($columns = 1; $columns <= 6; $columns++)
 {
-  //echo "<td colspan="2">$playerTotal[$columns]</td> ";
+  echo "<td colspan='2'>$playerTotal[$columns]</td> ";
 }
 echo "</tr>";
 echo "</table></form><div id='id'>Score Card #$scorecard_id</div></div>";
