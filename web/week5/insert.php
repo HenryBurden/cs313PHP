@@ -80,6 +80,7 @@ if(isset($_POST['player_name']))//update a name
     $statement->bindValue(':player_id', $player_id);
     $statement->bindValue(':player_name', $player_name);
     $statement->execute();
+    echo "$player_name goes in this id: $player_id";
   }
   catch (Exception $ex)
   {
