@@ -35,7 +35,7 @@ $player_id = $_POST['player_id'];
 
 //Check which query to run
 $query = '';
-if($values != "")//update a score
+if(isset($_POST['value']))//update a score
 {
   try
   {
@@ -53,7 +53,7 @@ if($values != "")//update a score
   }
 }
 
-if($bet != "")//update a bet
+if(isset($_POST['bet']))//update a bet
 {
   try
   {
@@ -71,9 +71,8 @@ if($bet != "")//update a bet
   }
 }
 
-if($name != "")//update a name
+if(isset($_POST['player_name']))//update a name
 {
-  echo "IM IN";
   try
   {
     $query = "UPDATE player SET player_name = :player_name WHERE player_id = :player_id";
