@@ -21,9 +21,9 @@
 
 #scoreCard {
     text-align: center;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 1px solid black;
-    background-color: grey;
+    background-color: lemonchiffon;
 
     position: fixed;
     top: 50%;
