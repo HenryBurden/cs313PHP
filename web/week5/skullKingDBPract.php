@@ -54,14 +54,14 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 /**
  * Create Scorecard with current DB values
  */
-echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr>';
+echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr><th>Round</th>';
 for($i = 0; $i < 6; $i++)
 {
   //name inputs
   echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"';
   echo 'onchange="updateDBName(this.value, '.$playerIDs[$i].')" ></th>';
 }
-echo '</tr><tr>';
+echo '</tr><tr><td></td>';
 for($i = 0; $i < 6; $i++)
 {
   echo '<td>Bet</td><td>Score</td>';
