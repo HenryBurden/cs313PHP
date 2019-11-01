@@ -80,7 +80,7 @@ for($rows = 0; $rows < 10; $rows++)
     echo 'onchange="updateDBBet(this.value, '.$playerIDs[$columns].', '.$rows.')" ></td>';
 
     //score inputs
-    echo '<td id="scorecol><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
+    echo '<td id="scorecol"><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
     echo 'onchange="updateDBScore(this.value, '.$scorecard_id.', '.$playerIDs[$columns].', '.$rows.')" ></td>';
   }
   echo '</tr>';
