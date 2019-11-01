@@ -32,6 +32,7 @@ $players[] = "";
 $playerIDs[] = "";
 $bets = array();
 $scores = array();
+$playerTotal = array();
 $playerCount = 0;
 
 $statement = $db->query("SELECT player_name, player_id FROM player WHERE scorecard_id = $scorecard_id ORDER BY player_id");
@@ -46,6 +47,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     {
       $bets[$playerCount][$roundCount] = $row2['bet'];
       $scores[$playerCount][$roundCount] = $row2['score'];
+      $playerTotal[$playerCount] += $row2['score'];
       $roundCount++;
     }
   $playerCount++;
@@ -83,7 +85,13 @@ for($rows = 0; $rows < 10; $rows++)
   }
   echo '</tr>';
 }
-echo "<tr><td>Totals:</td></tr>";
+
+echo "<tr><td>Totals:</td>";//add the totals
+for($columns = 1; $columns <= 6; $columns++)
+{
+  echo "<td colspan="2">$playerTotal[$columns]</td> ";
+}
+echo "</tr>";
 echo "</table></form><div id='id'>Score Card #$scorecard_id</div></div>";
 ?>
 
