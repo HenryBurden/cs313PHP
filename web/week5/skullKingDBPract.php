@@ -57,7 +57,9 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 echo '<div id="scoreCard"><h1>Skull King ScoreCard</h1><form id="form"><table><tr>';
 for($i = 0; $i < 6; $i++)
 {
-  echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"></th>';
+  //name inputs
+  echo '<th colspan="2"><input type="text" class="name" id="name'.$i.'" value="'.$players[$i].'"';
+  echo 'onchange="updateDBName(this.value, '.$playerIDs[$columns].')" ></th>';
 }
 echo '</tr><tr>';
 for($i = 0; $i < 6; $i++)
@@ -70,7 +72,9 @@ for($rows = 0; $rows < 10; $rows++)
   echo '<tr>';
   for($columns = 0; $columns < 6; $columns++)
   {
-    echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"></td>';
+    //bet inputs
+    echo '<td><input class="bet" id="bet'.$columns.'R'.$rows.'" type="number" value="'.$bets[$columns][$rows].'"';
+    echo 'onchange="updateDBBet(this.value, '.$playerIDs[$columns].', '.$rows.')" ></td>';
 
     //score inputs
     echo '<td><input type="number" class="score" id="score'.$columns.'R'.$rows.'"value="'.$scores[$columns][$rows].'"';
@@ -107,7 +111,7 @@ echo "</table></form></div>";
         });
       }
 
-      function updateDBBet(round_number, player_id, bet) {
+      function updateDBBet(bet, round_number, player_id) {
         $.ajax({
         type: 'POST',
         url: 'insert.php',
@@ -120,8 +124,7 @@ echo "</table></form></div>";
         });
       }
 
-      function updateDBName(player_id, name) {
-        round_number++;
+      function updateDBName(name, player_id) {
         $.ajax({
         type: 'POST',
         url: 'insert.php',
