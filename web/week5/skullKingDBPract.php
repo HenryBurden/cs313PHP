@@ -132,7 +132,7 @@ echo "</table></form></div>";
         success: function(response) {
             $('#result').html(response);
             console.log(response);
-            //window.location.reload();
+            window.location.reload();
           }
         });
       }
