@@ -65,6 +65,8 @@ h1 {
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 
     padding: 30px 40px 30px 40px;
 
