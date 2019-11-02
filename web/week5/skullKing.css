@@ -21,8 +21,8 @@ input[type=submit], #scorecard_id, #button {
 
 h1 {
     background-color: crimson;
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
     border-radius: 20px;
 }
 
