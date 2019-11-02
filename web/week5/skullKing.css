@@ -21,6 +21,7 @@ input[type=submit], #scorecard_id, #button {
 
 h1 {
     background-color: crimson;
+    margin-top: -30px;
 }
 
 .bet {
