@@ -15,7 +15,7 @@ input[type=submit], #scorecard_id, #button {
     border-radius: 4px;
   }
   
-#scorecard_id:focus {
+#scorecard_id:focus, td {
     border: 3px solid rgb(0, 68, 255);
 }
 
