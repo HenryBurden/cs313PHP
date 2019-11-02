@@ -11,16 +11,15 @@
 <body>
     <div id="scoreCard">
         <h1>SKULLKING</h1>
-        <h3>
-            New Score Card
-            <button type="button" onclick="location.href='newScore.php'">Create</button>
-        </h3>
+        <h3>New Score Card</h3>
+        <button type="button" onclick="location.href='newScore.php'">Create</button>
+
         <h3> OR </h3>
         <h3>
             Existing Score Card #
             <form>
                 <input type="number" id="scorecard_id" name="scorecard_id">
-                <button type="button" class="score" onclick="">Go</button>
+                <button type="button" onclick="">Go</button>
             </form>
         </h3>
     </div>
