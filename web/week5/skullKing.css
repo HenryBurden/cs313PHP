@@ -90,10 +90,6 @@ td, th {
     text-align: center;
 }
 
-input:nth-child(even), td:nth-child(even){
-    border-left: 2px solid black;
-}
-
 input {
     text-align: center;
 }

@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
+    <script>
+        function goToScoreCard(){
+            document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
+        }
+    </script>
 </head>
 <body>
     <div id="scoreCard">
@@ -17,7 +22,7 @@
         <h3> OR </h3>
         <h3>
             Existing Score Card #
-            <form>
+            <form onSubmit="return goToScoreCard()">
                 <input type="number" id="scorecard_id" name="scorecard_id">
                 <input type="submit" value="Go" onclick="">
             </form>
