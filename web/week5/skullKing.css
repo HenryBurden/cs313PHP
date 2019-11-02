@@ -20,7 +20,7 @@ input[type=submit], #scorecard_id, #button {
     color: black;
   }
   
-#scorecard_id:focus, td::-moz-focus-inner{
+#scorecard_id:focus{
     border: 3px solid rgb(0, 68, 255);
 }
 
