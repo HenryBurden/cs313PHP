@@ -72,7 +72,7 @@ echo '</tr><tr>';
 for($rows = 0; $rows < 10; $rows++)
 {
   $rowNum = $rows + 1;
-  echo '<tr><td>'.$rowNum.'</td>';
+  echo '<tr><th>'.$rowNum.'</th>';
   for($columns = 0; $columns < 6; $columns++)
   {
     //bet inputs
