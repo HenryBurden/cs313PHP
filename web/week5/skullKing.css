@@ -47,8 +47,7 @@ input[type=submit], #scorecard_id, #button {
 #scoreCard {
     text-align: center;
     border-radius: 20px;
-    border: 1px solid black;
-    background-color: lemonchiffon;
+    border: 3px solid rgb(61, 55, 55);
     font-weight: bold;
 
     position: fixed;
