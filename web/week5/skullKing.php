@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
 </head>
-<body id="scorecard">
+<body>
+    <div id="scorecard">
     <h1>SKULLKING</h1>
     <h3>Click button to create New Score Card</h3>
     <button type="button" onclick="location.href='newScore.php'">Create</button>
+</div>
 </body>
 </html>
