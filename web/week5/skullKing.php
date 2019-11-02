@@ -9,7 +9,8 @@
 
     <script defer>
         function goToScoreCard(){
-            alert(document.getElementByID("scorecard_id").value);
+            var id = document.getElementByID("scorecard_id").value;
+            alert(id);
             //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
         }
     </script>
