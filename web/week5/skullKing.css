@@ -2,7 +2,7 @@ body {
     font-weight: bold;
 }
 
-input[type=submit], #scorecard_id {
+input[type=submit], #scorecard_id, #button {
     width: 30%;
     padding: 6px 10px;
     font-size: 20px;
@@ -15,7 +15,7 @@ input[type=submit], #scorecard_id {
     border-radius: 4px;
   }
   
-input[type=number]:focus {
+#scorecard_id:focus {
     border: 3px solid rgb(0, 68, 255);
 }
 

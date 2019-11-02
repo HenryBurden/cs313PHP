@@ -12,7 +12,7 @@
     <div id="scoreCard">
         <h1>SKULLKING</h1>
         <h3>New Score Card</h3>
-        <button type="button" onclick="location.href='newScore.php'">Create</button>
+        <button type="button" id="button" onclick="location.href='newScore.php'">Create</button>
 
         <h3> OR </h3>
         <h3>
