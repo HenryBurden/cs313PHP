@@ -91,7 +91,7 @@ td, th {
 }
 
 input:nth-child(even), td:nth-child(even){
-    border-right: black;
+    border-left: 2px solid black;
 }
 
 input {
