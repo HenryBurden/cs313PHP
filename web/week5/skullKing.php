@@ -26,6 +26,7 @@
 
     <script defer>
         function goToScoreCard(){
+            alert("Here");
             var id = document.getElementByID("scorecard_id").value;
             alert(id);
             //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
