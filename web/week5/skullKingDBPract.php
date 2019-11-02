@@ -93,7 +93,7 @@ for($columns = 0; $columns < 6; $columns++)
 }
 echo "</tr>";
 echo "</table></form><div id='id'>Score Card #$scorecard_id</div>";
-echo "<button>Refresh</button><button>New ScoreCard</button></div>";
+echo "<button onclick='refresh()'>Refresh</button><button onclick='getNewCard()'>New ScoreCard</button></div>";
 ?>
 
 
@@ -147,6 +147,14 @@ echo "<button>Refresh</button><button>New ScoreCard</button></div>";
             window.location.reload();
           }
         });
+      }
+
+      function refresh() {
+        window.location.reload();
+      }
+
+      function getNewCard() {
+        document.location.href = "newScore.php";
       }
     </script>
 </head>
