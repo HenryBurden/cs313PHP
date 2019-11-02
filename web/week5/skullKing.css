@@ -19,7 +19,7 @@ input[type=submit], #scorecard_id, #button {
     border-radius: 4px;
   }
   
-#scorecard_id:focus, td:focus{
+#scorecard_id:focus, td:hover{
     border: 3px solid rgb(0, 68, 255);
 }
 
@@ -41,7 +41,6 @@ h1 {
 .bet, .score {
     border-radius: 6px;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .name, #total {
