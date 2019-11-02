@@ -75,6 +75,7 @@ table {
     margin-right:auto;
     font-weight: bold;
     border: 2px solid gray;
+    border-collapse: collapse;
 }
 
 td {
