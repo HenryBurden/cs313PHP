@@ -39,15 +39,13 @@ h1 {
 }
 
 .bet, .score {
-    border-radius: 6px;
     font-size: 16px;
 }
 
 .name, #total {
     width: 80px;
     text-align: center;
-    border-radius: 6px;
-    border: 2px solid gray;
+    border: 0px;
     font-weight: 900;
 }
 
