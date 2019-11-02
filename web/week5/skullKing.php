@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
+    <script defer>
+        function goToScoreCard(){
+            alert("Here");
+            var id = document.getElementByID("scorecard_id").value;
+            alert(id);
+            //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
+        }
+    </script>
+
 </head>
 <body>
     <div id="scoreCard">
@@ -17,20 +26,11 @@
         <h3> OR </h3>
         <h3>
             Existing Score Card #
-            <form onSubmit="goToScoreCard()">
+            <form>
                 <input type="number" id="scorecard_id" name="scorecard_id">
-                <input type="submit" value="Go">
+                <input type="button" value="Go" onclick="goToScoreCard()">
             </form>
         </h3>
     </div>
-
-    <script defer>
-        function goToScoreCard(){
-            alert("Here");
-            var id = document.getElementByID("scorecard_id").value;
-            alert(id);
-            //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
-        }
-    </script>
 </body>
 </html>
