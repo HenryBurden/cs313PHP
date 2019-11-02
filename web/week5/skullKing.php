@@ -25,7 +25,7 @@
             Existing Score Card #
             <form onSubmit="goToScoreCard()">
                 <input type="number" id="scorecard_id" name="scorecard_id">
-                <input type="submit" value="Go" onclick="">
+                <button onclick="goTOScoreCard()">Go<button>
             </form>
         </h3>
     </div>
