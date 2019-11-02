@@ -21,8 +21,6 @@ input[type=submit], #scorecard_id, #button {
 
 h1 {
     background-color: crimson;
-    margin-right: 10%;
-    margin-left: 10%;
     border-radius: 20px;
 }
 
@@ -65,6 +63,8 @@ h1 {
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 table {
