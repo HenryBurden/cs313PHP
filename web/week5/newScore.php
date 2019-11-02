@@ -1,4 +1,5 @@
 <?php
+echo 'Loading...';
 /**
  * Connect to DB
  */
@@ -23,8 +24,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-echo 'Loading...';
 
 /**
  * Create new scorecard in DB
