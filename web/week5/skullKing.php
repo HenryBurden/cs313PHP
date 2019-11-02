@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="skullKing.css">
 
-    <script defer>
-        function goToScoreCard(){
-            var id = document.getElementByID("scorecard_id").value;
-            alert(id);
-            //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
-        }
-    </script>
 </head>
 <body>
     <div id="scoreCard">
@@ -30,5 +23,13 @@
             </form>
         </h3>
     </div>
+
+    <script defer>
+        function goToScoreCard(){
+            var id = document.getElementByID("scorecard_id").value;
+            alert(id);
+            //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
+        }
+    </script>
 </body>
 </html>
