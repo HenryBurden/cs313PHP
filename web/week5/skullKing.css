@@ -79,7 +79,7 @@ table {
     border-collapse: collapse;
 }
 
-td {
+td, th {
     border: 2px solid gray;
 }
 
