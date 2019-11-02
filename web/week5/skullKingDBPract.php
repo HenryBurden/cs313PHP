@@ -92,6 +92,7 @@ for($columns = 0; $columns < 6; $columns++)
   echo "<td colspan='2'><input type='number' id='total' value='$playerTotal[$columns]'</td> ";
 }
 echo "</tr>";
+echo "<button>Refresh</button><button>New ScoreCard</button>";
 echo "</table></form><div id='id'>Score Card #$scorecard_id</div></div>";
 ?>
 
