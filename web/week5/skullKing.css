@@ -76,6 +76,7 @@ table {
     font-weight: bold;
     border: 2px solid gray;
     border-collapse: collapse;
+    padding: 5px;
 }
 
 td {
