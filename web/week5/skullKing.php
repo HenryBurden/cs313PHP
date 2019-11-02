@@ -19,7 +19,7 @@
             Existing Score Card #
             <form>
                 <input type="number" id="scorecard_id" name="scorecard_id">
-                <button type="button" onclick="">Go</button>
+                <input type="submit" value="Go" onclick="">
             </form>
         </h3>
     </div>

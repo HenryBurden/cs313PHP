@@ -2,7 +2,7 @@ body {
     font-weight: bold;
 }
 
-input[type=number], button {
+input[type=submit], #scorecard_id {
     width: 30%;
     padding: 6px 10px;
     font-size: 20px;
