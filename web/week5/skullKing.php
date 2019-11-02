@@ -9,8 +9,8 @@
 
     <script>
         function goToScoreCard(){
-            console.log("WORKY");
-            document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
+            console.log(document.getElementByID("scorecard_id").value);
+            //document.location.href = `skullKingDBPract.php?scorecard_id=${document.getElementByID("scorecard_id").value}`;
         }
     </script>
 </head>
