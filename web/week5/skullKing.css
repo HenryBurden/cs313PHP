@@ -2,6 +2,10 @@ body {
     font-weight: bold;
 }
 
+input:focus{
+    outline: none;
+}
+
 input[type=submit], #scorecard_id, #button {
     width: 30%;
     padding: 6px 10px;
