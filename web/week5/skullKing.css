@@ -22,6 +22,8 @@ input[type=submit], #scorecard_id, #button {
 h1 {
     background-color: crimson;
     border-radius: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .bet {
@@ -63,8 +65,10 @@ h1 {
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    margin-right: 5%;
-    margin-left: 5%;
+
+    padding-right: 5%;
+    padding-left: 5%;
+
 }
 
 table {
