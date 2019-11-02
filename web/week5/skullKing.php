@@ -23,9 +23,9 @@
         <h3> OR </h3>
         <h3>
             Existing Score Card #
-            <form onSubmit="goToScoreCard()">
+            <form onSubmit="return goToScoreCard()">
                 <input type="number" id="scorecard_id" name="scorecard_id">
-                <button onclick="goTOScoreCard()">Go<button>
+                <input type="submit" value="Go">
             </form>
         </h3>
     </div>
