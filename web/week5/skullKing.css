@@ -90,7 +90,7 @@ td, th {
     text-align: center;
 }
 
-td:nth-child(2){
+input:nth-child(3), td:nth-child(3){
     background-color: darkblue;
 }
 
