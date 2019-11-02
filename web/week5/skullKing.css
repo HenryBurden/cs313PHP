@@ -75,6 +75,10 @@ table {
     border: 2px solid gray;
 }
 
+td {
+    border: 2px solid gray;
+}
+
 input {
     text-align: center;
 }
