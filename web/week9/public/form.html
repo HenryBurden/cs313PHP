@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postal Rate Form</title>
+</head>
+<body>
+    <form action="/rate" method="get">
+        Enter Weight of Item in oz.: <input type="text" name="weight"><br>
+        <select name="mail_type">
+            <option value="stamped">Stamped Letter</option>
+            <option value="metered">Metered Letter</option>
+            <option value="flat">Large Envelope / Flat</option>
+            <option value="retail">First-Class Package Service</option>
+        </select>
+        <br>
+        <input type="submit" value="Rate">
+    </form>
+</body>
+</html>
