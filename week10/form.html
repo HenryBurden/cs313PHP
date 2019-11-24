@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Scorecards</title>
+</head>
+
+<body>
+    <button type="button" onclick="getScoreIDs()">Get Scorecard #'s</button>
+    <h2>All Scorecard #'s: </h2>
+    <!--Empty List to be filled with DB values-->
+    <ul id= "numbers"></ul>
+
+    <script>
+        /**
+         * Ajax function gets the scorecard data from the DB and fills the numbers list
+         */
+        function getScoreIDs() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var ids = JSON.parse(this.response); //turn JSON into an object
+                    document.getElementById("numbers").innerHTML = ""; //empty the list each run
+                    ids.forEach(id => {
+                        document.getElementById("numbers").innerHTML += `<li>${id.scorecard_id}</li>`; //fill the list with the values
+                    });
+                }
+            };
+            xhttp.open("GET", "/getScorecards", true); //use a get to recieve info from getScorecards
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>
